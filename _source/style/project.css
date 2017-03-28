@@ -1,0 +1,60 @@
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20.0rem;
+
+  & > .background {
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.85) 75%, rgba(255, 255, 255, 0.85));
+  }
+
+  & > h1 {
+    color: #212121;
+  }
+}
+
+main {
+  background: #EEEEEE;
+}
+
+article {
+  background: #FAFAFA;
+
+  & a[href^="http"]:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f08e";
+    margin: 0 3px;
+  }
+}
+
+.youtube {
+  position: relative;
+  margin: 0;
+  width: 100%;
+
+  @nest .markdown-body & {
+    margin: 1.0rem auto;
+    max-width: 520px;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+
+  & > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tag {
+  color: #1565C0;
+}

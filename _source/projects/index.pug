@@ -1,0 +1,31 @@
+extends /_base.pug
+
+block first
+  | ---
+  | ---
+  |
+
+block head
+  title Projects | 明治大学 宮下研究室
+  meta(name="robots", content="noindex")
+  style.
+    #projects h2 {
+      padding-top: 3.0rem;
+      margin-top: -3.0rem;
+    }
+
+block body
+  .nav-padding
+  main.max-width-4.mx-auto.px1.pb2
+    section#projects
+      h1 Projects
+      | {% assign projects_groups_by_year = (site.articles | where: "layout", "project" | group_by_exp: "item", "item.date | date: '%Y'" | sort: "name" | reverse) %}
+      | {% for projects_group in projects_groups_by_year %}
+      .p1
+        h2(id="{{ projects_group.name | slugify }}") {{ projects_group.name }}年
+        | {% assign projects = (projects_group.items | sort: "title" | sort: "date" | reverse) %}
+        | {% for project in projects %}
+        p.m0.pb1.pl2
+          a(href="{{ project.url }}") {{ project.title }}
+        | {% endfor %}
+      | {% endfor %}

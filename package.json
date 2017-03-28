@@ -1,0 +1,36 @@
+{
+  "name": "miyashita.com",
+  "version": "0.0.0",
+  "scripts": {
+    "html:build": "pug _source --basedir _source --out ./",
+    "html:watch": "npm run html:build -- --watch",
+    "style:build": "postcss \"_source/style/**/*.css\" --dir style",
+    "style:watch": "npm run style:build -- --watch",
+    "assets:build": "cpx \"_source/assets/**/*\" assets",
+    "assets:watch": "npm run assets:build -- --watch",
+    "script:build": "cpx \"_source/script/**/*\" script",
+    "script:watch": "npm run script:build -- --watch",
+    "clean": "rimraf index.html _layouts style script",
+    "prewatch": "npm run clean",
+    "watch": "npm-run-all -p *:watch",
+    "prebuild": "npm run clean",
+    "build": "npm-run-all -p *:build",
+    "postbuild": "rimraf \"**/_*.html\"",
+    "serve": "browser-sync start --no-open --server ./ --files ./ --port 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "cpx": "^1.5.0",
+    "http-server": "^0.9.0",
+    "jstransformer-marked": "^1.0.2",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.0.2",
+    "postcss": "^5.2.16",
+    "postcss-cli": "^3.0.0",
+    "postcss-cssnext": "^2.10.0",
+    "pug": "^2.0.0-beta11",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^2.6.1"
+  }
+}

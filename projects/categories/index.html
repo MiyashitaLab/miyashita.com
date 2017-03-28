@@ -1,0 +1,16 @@
+---
+---
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="none"><meta name="viewport" content="width=device-width,initial-scale=1">{% seo title=false %}<link rel="stylesheet" href="{{ site.baseurl }}/style/layout.css"><title>Categories | Projects | 明治大学 宮下研究室</title><meta name="robots" content="noindex"><style>#projects h2 {
+  padding-top: 3.0rem;
+  margin-top: -3.0rem;
+}
+</style></head><body><nav class="border-box fixed"><div class="max-width-4 mx-auto clearfix"><div class="col col-6 left-align"><ul class="m0 list-reset"><a href="{{ site.baseurl }}/"><li class="inline-block mx1"><img class="logo" alt="宮下研究室" src="{{ site.baseurl }}/assets/logo.png"></li></a></ul></div><div class="col col-6 right-align py2"><ul class="m0 list-reset"><a href="https://news.miyashita.com"><li class="inline-block mx1">最新情報</li></a><a href="https://research.miyashita.com"><li class="inline-block mx1">機関リポジトリ</li></a></ul></div></div></nav><div class="nav-padding"></div><main class="max-width-4 mx-auto px1 pb2"><section id="projects"><h1>Categories</h1>{% assign projects = (site.articles | where: "layout", "project" | sort: "title" | sort: "date" | reverse) %}
+{% assign categories = "" | split: "/" %}
+{% for project in projects %}
+  {% for category in project.categories %}
+    {% assign categories = categories | push: category %}
+  {% endfor %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
+{% for category in categories %}<div class="p1"><h2 class="mb2" id="{{ category | slugify }}">{{ category }}</h2>{% assign projects_in_category = projects | where_exp: "item", "item.categories contains category" %}
+{% for project in projects_in_category %}<p class="m0 pb2 pl2"><a href="{{project.url}}">{{ project.title }}</a></p>{% endfor %}</div>{% endfor %}</section></main><footer><p class="m0 pt2 px2 center"><small>&copy; 宮下研究室</small></p><p class="m0 px2 center"><small>〒164-8525 東京都中野区中野 4-21-1</small></p><p class="m0 px2 center"><small>明治大学 総合数理学部 先端メディアサイエンス学科 宮下研究室</small></p><p class="m0 pb2 px2 center"><small>研究室：1018室　実験室：1017室</small></p></footer></body></html>

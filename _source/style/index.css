@@ -1,0 +1,46 @@
+@import "https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css";
+
+header {
+  height: 25vh;
+  background-image: url("http://miyashita.com/wp-content/uploads/2016/10/main2016-1170x480.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #212121;
+}
+
+.article-card {
+  position: relative;
+  height: 100%;
+}
+
+.image-16-9 {
+  width: 100%;
+
+  background-color: #E0E0E0;
+  background-position: center center;
+  background-size: cover;
+
+  &:before {
+    content:"";
+    display: block;
+    padding-bottom: calc(100% * 9 / 16);
+  }
+}
+
+.link-card {
+  &:active,
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.avatar-wrap {
+  position: relative;
+  width: 100px;
+  height: 0;
+  padding-bottom: 100px;
+
+  background-color: #E0E0E0;
+  background-size: cover;
+}

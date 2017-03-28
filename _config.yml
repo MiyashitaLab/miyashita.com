@@ -1,0 +1,118 @@
+host: 0.0.0.0
+port: 8000
+baseurl: /miyashita.com
+permalink: /:year/:title
+markdown: kramdown
+kramdown:
+   input: GFM
+   hard_wrap: false
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+feed:
+  path: atom.xml
+twitter:
+  username: miyashita_lab
+collections:
+  articles:
+    output: true
+defaults:
+  - scope:
+      type: articles
+      path: _articles/members
+    values:
+      permalink: /members/:title/
+      layout: member
+      avatar: https://placehold.it/200?text=NO+IMAGE
+  - scope:
+      type: articles
+      path: _articles/projects
+    values:
+      permalink: /projects/:title/
+      layout: project
+      thumbnail: https://placehold.it/400x225?text=NO+IMAGE
+prose:
+  rooturl: _articles
+  siteurl: https://miyashitalab.github.io/miyashita.com/
+  media: assets
+  ignore:
+    - _config.yml
+    - index.html
+  metadata:
+    _articles/members:
+      - name: layout
+        field:
+          element: hidden
+          value: member
+      - name: title
+        field:
+          element: text
+          label: 氏名
+          placeholder: 氏名
+      - name: avatar
+        field:
+          element: text
+          label: 顔写真 URL
+          placeholder: https://i.gyazo.com/0c50c296ead27df9f04ecca7b8a57eec.jpg
+          type: url
+      - name: category
+        field:
+          element: select
+          label: カテゴリ
+          value: 04_学士課程
+          options:
+            - name: 教員
+              value: 00_教員
+            - name: 研究員
+              value: 01_研究員
+            - name: 博士課程
+              value: 02_博士課程
+            - name: 修士課程
+              value: 03_修士課程
+            - name: 学士課程
+              value: 04_学士課程
+            - name: OB
+              value: 99_OB
+      - name: school_year
+        field:
+          element: number
+          label: 学年
+          help: 学部3年生なら"3"、修士2年生なら"2"
+          placeholder: 1
+      - name: class
+        field:
+          element: number
+          label: 期生
+          placeholder: 10
+    _pages/projects:
+      - name: layout
+        field:
+          element: hidden
+          value: project
+      - name: title
+        field:
+          element: text
+          label: タイトル
+          placeholder: プロジェクト名
+      - name: thumbnail
+        field:
+          element: text
+          label: サムネイル URL
+          help: トップに表示するときのサムネイル
+      - name: visibleOnTopPage
+        field:
+          element: checkbox
+          label: トップ画面に表示するか
+          value: false
+      - name: categories
+        field:
+          element: text
+          label: カテゴリ
+          help: https://miyashita.com/projects/categories/ を参考
+          placeholder: Digital Fabrication, Entertainment Computing
+      - name: date
+        field:
+          element: text
+          label: 発表日時
+          value: CURRENT_DATETIME

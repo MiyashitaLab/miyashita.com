@@ -1,0 +1,35 @@
+extends /_base.pug
+
+block first
+  | ---
+  | ---
+  |
+
+block head
+  title Members | 明治大学 宮下研究室
+  link(rel="stylesheet", href="{{ site.baseurl }}/style/index.css")
+
+block body
+  .nav-padding
+
+  main.max-width-4.mx-auto.p2.pb4
+    section#members
+      h1 Members
+      h2 Current members
+      .members-container.flex.flex-wrap
+        | {% assign members = (site.articles | where: "layout", "member" | sort: "title" | sort: "class" | reverse | sort: "school_year" | reverse | sort: "category") %}
+        | {% for member in members %}
+        | {% if member.category != "99_OB" %}
+        a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
+          .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
+          p.m0 {{ member.title }}
+        | {% endif %}
+        | {% endfor %}
+      h2 OB members
+        | {% for member in members %}
+        | {% if member.category == "99_OB" %}
+        a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
+          .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
+          p.m0 {{ member.title }}
+        | {% endif %}
+        | {% endfor %}

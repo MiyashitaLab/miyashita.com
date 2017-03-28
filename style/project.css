@@ -1,0 +1,63 @@
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+  height: 20.0rem
+}
+
+header > .background {
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(255, 255, 255, .85) 75%, rgba(255, 255, 255, .85));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .25), rgba(255, 255, 255, .85) 75%, rgba(255, 255, 255, .85))
+}
+
+header > h1 {
+  color: #212121
+}
+
+main {
+  background: #EEEEEE;
+}
+
+article {
+  background: #FAFAFA
+}
+
+article a[href^="http"]:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f08e";
+  margin: 0 3px
+}
+
+.youtube {
+  position: relative;
+  margin: 0;
+  width: 100%
+}
+
+.markdown-body .youtube {
+  margin: 16px auto;
+  margin: 1.0rem auto;
+  max-width: 520px
+}
+
+.youtube:before {
+  display: block;
+  content: "";
+  padding-top: 56.25%
+}
+
+.youtube > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%
+}
+
+.tag {
+  color: #1565C0;
+}

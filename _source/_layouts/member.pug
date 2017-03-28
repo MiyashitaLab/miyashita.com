@@ -1,0 +1,17 @@
+extends ../_base.pug
+
+block head
+  title {{ page.title }} | 明治大学 宮下研究室
+  link(rel="stylesheet", href="{{ site.baseurl }}/style/member.css")
+
+block body
+  .nav-padding
+  main.max-width-4.mx-auto
+    .clearfix.py3.px2
+      .xs-hide.sm-hide.left.p1
+        .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ page.avatar }}\")")
+      .md-hide.lg-hide.p1.center
+        .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ page.avatar }}\")")
+      .markdown-body.overflow-hidden.p2
+        h1 {{ page.title }}
+        | {{ content }}

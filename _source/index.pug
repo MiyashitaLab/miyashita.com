@@ -1,0 +1,64 @@
+extends /_base.pug
+
+block first
+  | ---
+  | ---
+  |
+
+block head
+  title 明治大学 宮下研究室
+  link(rel="stylesheet", href="{{ site.baseurl }}/style/index.css")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js")
+  script(src="{{ site.baseurl }}/script/index.js", defer)
+
+block body
+  .nav-padding
+
+  header
+
+  main.max-width-4.mx-auto.p2.pb4
+    section#news
+      h2 News
+      | {% raw %}
+      ul.flex.flex-wrap.list-reset.m0
+        li.col.col-12.sm-col-6.md-col-4.lg-col-3.border-box.p2(v-for="news in newsList")
+          .article-card.border.rounded
+            .image-16-9(v-bind:style="'background-image:url(\"'+news.image+'\");'")
+            .px2.py1
+              date.block.pr2 {{ news.date }}
+              p.m0.pl2
+                a(v-bind:href="news.url") {{ news.title }}
+      | {% endraw %}
+      p.m0.right-align
+        a(href="https://news.miyashita.com") 過去の記事は こちらから >
+
+    section#projects
+      h2 Projects
+      ul.flex.flex-wrap.list-reset.m0
+        | {% assign projects = (site.articles | where: "layout", "project" | where: "visibleOnTopPage", true | sort: "title" | sort: "date" | reverse | shift: 4) %}
+        | {% for project in projects %}
+        | {% if project.layout == "project" %}
+        li.col.col-12.md-col-6.lg-col-4.p2
+          a.article-card(href="{{project.url}}")
+            .image-16-9.rounded(style="background-image:url(\"{{ project.thumbnail }}\");")
+            .px2.py1
+              p.m0 {{ project.title }}
+        | {% endif %}
+        | {% endfor %}
+      p.m0.right-align
+        a(href="{{ site.baseurl }}/projects") すべてのプロジェクトは こちらから >
+
+    section#members
+      h2 Members
+      .members-container.flex.flex-wrap
+        | {% assign members = (site.articles | where: "layout", "member" | sort: "title" | sort: "school_year" | reverse | sort: "category") %}
+        | {% for member in members %}
+        | {% if member.category != "99_OB" %}
+        a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
+          .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
+          p.m0 {{ member.title }}
+        | {% endif %}
+        | {% endfor %}
+      p.m0.right-align
+        a(href="{{ site.baseurl }}/members") OB・OG は こちらから >

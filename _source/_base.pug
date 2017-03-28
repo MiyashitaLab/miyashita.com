@@ -1,0 +1,35 @@
+block first
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="robots", content="none")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    | {% seo title=false %}
+    link(rel="stylesheet", href="{{ site.baseurl }}/style/layout.css")
+    block head
+      title 明治大学 宮下研究室
+  body
+    nav.border-box.fixed
+      .max-width-4.mx-auto.clearfix
+        .col.col-6.left-align
+          ul.m0.list-reset
+            a(href="{{ site.baseurl }}/")
+              li.inline-block.mx1
+                img.logo(alt="宮下研究室", src="{{ site.baseurl }}/assets/logo.png")
+        .col.col-6.right-align.py2
+          ul.m0.list-reset
+            a(href="https://news.miyashita.com")
+              li.inline-block.mx1 最新情報
+            a(href="https://research.miyashita.com")
+              li.inline-block.mx1 機関リポジトリ
+    block body
+    footer
+      p.m0.pt2.px2.center
+        small &copy; 宮下研究室
+      p.m0.px2.center
+        small 〒164-8525 東京都中野区中野 4-21-1
+      p.m0.px2.center
+        small 明治大学 総合数理学部 先端メディアサイエンス学科 宮下研究室
+      p.m0.pb2.px2.center
+        small 研究室：1018室　実験室：1017室

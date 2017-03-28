@@ -1,0 +1,40 @@
+extends /_base.pug
+
+block first
+  | ---
+  | ---
+  |
+
+block head
+  title Categories | Projects | 明治大学 宮下研究室
+  meta(name="robots", content="noindex")
+  style.
+    #projects h2 {
+      padding-top: 3.0rem;
+      margin-top: -3.0rem;
+    }
+
+block body
+  .nav-padding
+  main.max-width-4.mx-auto.px1.pb2
+    section#projects
+      h1 Categories
+
+      | {% assign projects = (site.articles | where: "layout", "project" | sort: "title" | sort: "date" | reverse) %}
+      | {% assign categories = "" | split: "/" %}
+      | {% for project in projects %}
+      |   {% for category in project.categories %}
+      |     {% assign categories = categories | push: category %}
+      |   {% endfor %}
+      | {% endfor %}
+
+      | {% assign categories = categories | uniq | sort %}
+      | {% for category in categories %}
+      .p1
+        h2.mb2(id="{{ category | slugify }}") {{ category }}
+        | {% assign projects_in_category = projects | where_exp: "item", "item.categories contains category" %}
+        | {% for project in projects_in_category %}
+        p.m0.pb2.pl2
+          a(href="{{project.url}}") {{ project.title }}
+        | {% endfor %}
+      | {% endfor %}
