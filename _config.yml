@@ -4,6 +4,7 @@ baseurl: ''
 url: https://test.miyashita.com
 permalink: /:year/:title
 markdown: kramdown
+description: 明治大学 総合数理学部 先端メディアサイエンス学科 / 明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 宮下研究室
 kramdown:
    input: GFM
    hard_wrap: false
