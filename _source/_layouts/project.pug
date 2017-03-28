@@ -2,9 +2,9 @@ extends ../_base.pug
 
 block head
   title {{ page.title }} | 明治大学 宮下研究室
-  link(rel="stylesheet", href="{{ site.baseurl }}/style/project.css")
+  link(rel="stylesheet", href="{{ site.url }}/style/project.css")
   script(src="https://unpkg.com/mikanjs@1.0.8", charset="utf-8")
-  script(src="{{ site.baseurl }}/script/project.js", defer)
+  script(src="{{ site.url }}/script/project.js", defer)
 
 block body
   header.relative
@@ -20,6 +20,6 @@ block body
         | {{ content }}
         p.border-top.px1.pt1
           | {% for category in page.categories %}
-          a(href="{{ site.baseurl }}/projects/categories#{{ category | slugify }}")
+          a(href="{{ site.url }}/projects/categories#{{ category | slugify }}")
             small.mr2.tag &#x23;{{ category }}
           | {% endfor %}

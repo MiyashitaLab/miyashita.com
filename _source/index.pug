@@ -7,10 +7,10 @@ block first
 
 block head
   title 明治大学 宮下研究室
-  link(rel="stylesheet", href="{{ site.baseurl }}/style/index.css")
+  link(rel="stylesheet", href="{{ site.url }}/style/index.css")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js")
-  script(src="{{ site.baseurl }}/script/index.js", defer)
+  script(src="{{ site.url }}/script/index.js", defer)
 
 block body
   .nav-padding
@@ -47,7 +47,7 @@ block body
         | {% endif %}
         | {% endfor %}
       p.m0.right-align
-        a(href="{{ site.baseurl }}/projects") すべてのプロジェクトは こちらから >
+        a(href="{{ site.url }}/projects") すべてのプロジェクトは こちらから >
 
     section#members
       h2 Members
@@ -61,4 +61,4 @@ block body
         | {% endif %}
         | {% endfor %}
       p.m0.right-align
-        a(href="{{ site.baseurl }}/members") OB・OG は こちらから >
+        a(href="{{ site.url }}/members") OB・OG は こちらから >

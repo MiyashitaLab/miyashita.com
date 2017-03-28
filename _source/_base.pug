@@ -6,7 +6,7 @@ html
     meta(name="robots", content="none")
     meta(name="viewport", content="width=device-width,initial-scale=1")
     | {% seo title=false %}
-    link(rel="stylesheet", href="{{ site.baseurl }}/style/layout.css")
+    link(rel="stylesheet", href="{{ site.url }}/style/layout.css")
     block head
       title 明治大学 宮下研究室
   body
@@ -14,9 +14,9 @@ html
       .max-width-4.mx-auto.clearfix
         .col.col-6.left-align
           ul.m0.list-reset
-            a(href="{{ site.baseurl }}/")
+            a(href="{{ site.url }}/")
               li.inline-block.mx1
-                img.logo(alt="宮下研究室", src="{{ site.baseurl }}/assets/logo.png")
+                img.logo(alt="宮下研究室", src="{{ site.url }}/assets/logo.png")
         .col.col-6.right-align.py2
           ul.m0.list-reset
             a(href="https://news.miyashita.com")
