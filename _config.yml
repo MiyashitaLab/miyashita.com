@@ -84,8 +84,8 @@ prose:
         field:
           element: number
           label: 期生
-          placeholder: 10
-    _pages/projects:
+          placeholder: e.g. 10
+    _articles/projects:
       - name: layout
         field:
           element: hidden
