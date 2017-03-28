@@ -1,17 +1,14 @@
 host: 0.0.0.0
 port: 8000
-baseurl: /miyashita.com
+baseurl: ''
 permalink: /:year/:title
 markdown: kramdown
 kramdown:
    input: GFM
    hard_wrap: false
 gems:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-feed:
-  path: atom.xml
 twitter:
   username: miyashita_lab
 collections:
@@ -34,7 +31,7 @@ defaults:
       thumbnail: https://placehold.it/400x225?text=NO+IMAGE
 prose:
   rooturl: _articles
-  siteurl: https://miyashitalab.github.io/miyashita.com/
+  siteurl: https://test.miyashita.com
   media: assets
   ignore:
     - _config.yml
