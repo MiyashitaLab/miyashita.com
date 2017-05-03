@@ -1,14 +1,12 @@
 ---
-title: 'HMMMML3:他人を意識したモチベーション向上を考えたプログラミング環境'
+title: HMMMML3:他人を意識したモチベーション向上を考えたプログラミング環境
+date: 2011-01-01 14:54:47 Z
+categories:
+- Programming Experience
 id: 896
 comment: false
-categories:
-  - Programming Experience
-date: 2011-01-01 14:54:47
-tags:
 visibleOnTopPage: true
 ---
-
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/mZ19RC09Pqs" frameborder="0" allowfullscreen></iframe>
 

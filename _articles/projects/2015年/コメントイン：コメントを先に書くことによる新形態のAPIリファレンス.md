@@ -1,13 +1,11 @@
 ---
 title: コメントイン：コメントを先に書くことによる新形態のAPIリファレンス
+date: 2015-12-02 00:10:23 Z
+categories:
+- Programming Experience
 id: 2433
 comment: false
-categories:
-  - Programming Experience
-date: 2015-12-02 00:10:23
-tags:
 ---
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wnXBYoBeNv4" frameborder="0" allowfullscreen></iframe>
 

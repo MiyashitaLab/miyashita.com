@@ -1,14 +1,12 @@
 ---
 title: ExtensionSticker
+date: 2015-04-26 01:53:45 Z
+categories:
+- Human Interface
 id: 714
 comment: false
-categories:
-  - Human Interface
-date: 2015-04-26 01:53:45
-tags:
 visibleOnTopPage: true
 ---
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/meiCpCgdenY" frameborder="0" allowfullscreen></iframe>
 

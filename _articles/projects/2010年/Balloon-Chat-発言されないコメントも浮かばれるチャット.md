@@ -1,13 +1,11 @@
 ---
 title: 'Balloon Chat: 発言されないコメントも浮かばれるチャット'
+date: 2010-12-01 16:05:25 Z
+categories:
+- コミュニケーション
 id: 1084
 comment: false
-categories:
-  - コミュニケーション
-date: 2010-12-01 16:05:25
-tags:
 ---
-
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/56UYC2ZcYGg" frameborder="0" allowfullscreen></iframe>
 

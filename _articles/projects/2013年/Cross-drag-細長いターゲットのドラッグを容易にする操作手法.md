@@ -1,13 +1,11 @@
 ---
 title: 'Cross-drag: 細長いターゲットのドラッグを容易にする操作手法'
+date: 2013-10-06 15:00:47 Z
+categories:
+- Human Interface
 id: 915
 comment: false
-categories:
-  - Human Interface
-date: 2013-10-06 15:00:47
-tags:
 ---
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HCsivEQPztw" frameborder="0" allowfullscreen></iframe>
 

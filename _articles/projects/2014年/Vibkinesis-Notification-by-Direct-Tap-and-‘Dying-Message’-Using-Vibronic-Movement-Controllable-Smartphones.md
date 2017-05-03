@@ -1,13 +1,11 @@
 ---
-title: >-
-  Vibkinesis: Notification by Direct Tap and ‘Dying Message’ Using Vibronic
-  Movement Controllable Smartphones
+title: 'Vibkinesis: Notification by Direct Tap and ‘Dying Message’ Using Vibronic
+  Movement Controllable Smartphones'
+date: 2014-10-07 15:04:37 Z
+categories:
+- Human Interface
 id: 928
 comment: false
-categories:
-  - Human Interface
-date: 2014-10-07 15:04:37
-tags:
 ---
 
 [![Vibkinesis画像](/wp-content/uploads/2015/05/Vibkinesis画像.png)](/wp-content/uploads/2015/05/Vibkinesis画像.png)

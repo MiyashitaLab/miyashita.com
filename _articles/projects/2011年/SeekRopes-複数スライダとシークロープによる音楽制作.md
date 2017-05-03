@@ -1,13 +1,11 @@
 ---
-title: 'SeekRopes:複数スライダとシークロープによる音楽制作'
+title: SeekRopes:複数スライダとシークロープによる音楽制作
+date: 2011-01-01 15:05:40 Z
+categories:
+- 聴覚コンテンツ
 id: 955
 comment: false
-categories:
-  - 聴覚コンテンツ
-date: 2011-01-01 15:05:40
-tags:
 ---
-
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/5d9lq1_e2b4" frameborder="0" allowfullscreen></iframe>
 

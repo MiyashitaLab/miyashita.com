@@ -1,13 +1,11 @@
 ---
 title: HMMBB
+date: 2010-04-01 15:14:09 Z
+categories:
+- Programming Experience
 id: 982
 comment: false
-categories:
-  - Programming Experience
-date: 2010-04-01 15:14:09
-tags:
 ---
-
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/CAHaTn8PPjA" frameborder="0" allowfullscreen></iframe>
 

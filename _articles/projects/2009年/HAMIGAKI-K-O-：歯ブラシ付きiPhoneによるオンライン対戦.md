@@ -1,11 +1,10 @@
 ---
 title: HAMIGAKI-K.O.：歯ブラシ付きiPhoneによるオンライン対戦
+date: 2009-01-01 15:04:00 Z
+categories:
+- Entertainment Computing
 id: 946
 comment: false
-categories:
-  - Entertainment Computing
-date: 2009-01-01 15:04:00
-tags:
 ---
 
 HAMIGAKI-K.O.：歯ブラシ付きiPhoneによるオンライン対戦はiPhoneとiPhoneに接続された歯ブラシアタッチメントを使用してプレイするゲームです.

@@ -1,13 +1,11 @@
 ---
 title: 組み換え可能なARマーカの提案
+date: 2011-04-26 02:51:54 Z
+categories:
+- Entertainment Computing
 id: 752
 comment: false
-categories:
-  - Entertainment Computing
-date: 2011-04-26 02:51:54
-tags:
 ---
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0bMSE-zB3Yo" frameborder="0" allowfullscreen></iframe>
 

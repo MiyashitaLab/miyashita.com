@@ -1,13 +1,11 @@
 ---
 title: アニメーションの手描きＮ次創作支援システム
+date: 2011-01-01 15:09:07 Z
+categories:
+- Visual Media
 id: 934
 comment: false
-categories:
-  - Visual Media
-date: 2011-01-01 15:09:07
-tags:
 ---
-
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/DsvUMNkiOTc" frameborder="0" allowfullscreen></iframe>
 

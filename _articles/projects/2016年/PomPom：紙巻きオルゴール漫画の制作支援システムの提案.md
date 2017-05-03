@@ -1,13 +1,11 @@
 ---
 title: PomPom：紙巻きオルゴール漫画の制作支援システムの提案
+date: 2016-03-09 00:00:14 Z
+categories:
+- Music Experience
 id: 2227
 comment: false
-categories:
-  - Music Experience
-date: 2016-03-09 00:00:14
-tags:
 ---
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2nfCFhLHzMk" frameborder="0" allowfullscreen></iframe>
 

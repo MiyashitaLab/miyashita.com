@@ -1,11 +1,10 @@
 ---
 title: 'HMMMML2: 超好意的に解釈するコンパイラ'
+date: 2010-12-01 00:00:43 Z
+categories:
+- Programming Experience
 id: 903
 comment: false
-categories:
-  - Programming Experience
-date: 2010-12-01 00:00:43
-tags:
 ---
 
 [embed width="480" height="385"]http://youtu.be/7h0EedR5C3Y[/embed]

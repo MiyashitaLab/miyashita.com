@@ -1,13 +1,11 @@
 ---
 title: 'Bar-code Based Community: ソフト/ハードの区別なく同じツールのユーザ同士を繋げる仕組み'
+date: 2010-05-01 14:57:59 Z
+categories:
+- コミュニケーション
 id: 916
 comment: false
-categories:
-  - コミュニケーション
-date: 2010-05-01 14:57:59
-tags:
 ---
-
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/e7HBCmbnOSs?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 

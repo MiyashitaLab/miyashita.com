@@ -1,11 +1,10 @@
 ---
 title: Seek Rope： 曲げて切って結べるシークバー
+date: 2010-04-29 20:41:52 Z
+categories:
+- Human Interface
 id: 860
 comment: false
-categories:
-  - Human Interface
-date: 2010-04-29 20:41:52
-tags:
 ---
 
 [![seekrope](/wp-content/uploads/2015/04/seekrope.jpg)](/wp-content/uploads/2015/04/seekrope.jpg)

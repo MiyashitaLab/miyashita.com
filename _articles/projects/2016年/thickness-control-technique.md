@@ -1,14 +1,12 @@
 ---
 title: Thickness Control Technique
+date: 2016-10-17 00:00:32 Z
+categories:
+- Digital Fabrication
 id: 2422
 comment: false
-categories:
-  - Digital Fabrication
-date: 2016-10-17 00:00:32
-tags:
 visibleOnTopPage: true
 ---
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fL9W5oxfj3g" frameborder="0" allowfullscreen></iframe>
 
