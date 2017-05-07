@@ -17,6 +17,13 @@
 </head>
 <body>
   <div id='prose'></div>
+  <script>
+    function onApiLoad() {
+      gapi.load('auth', {'callback': function () { console.info('Loaded gapi.auth'); }});
+      gapi.load('picker', {'callback': function () { console.info('Loaded google.picker'); }});
+    }
+  </script>
+  <script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
   <script src='locale.js'></script>
   <script src='dist/prose.js'></script>
 </body>
