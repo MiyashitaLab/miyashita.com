@@ -1,11 +1,13 @@
 ---
-title: F.A.R. Vision :拡張現実感の情報量を制御する眉間フェーダー
-date: 2009-05-01 15:07:05 Z
-categories:
-- 拡張現実感
+title: 'F.A.R. Vision :拡張現実感の情報量を制御する眉間フェーダー'
 id: 929
 comment: false
+categories:
+  - 拡張現実感
+date: 2009-05-01 15:07:05
+tags:
 ---
+
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/vFW-46-cbS8" frameborder="0" allowfullscreen></iframe>
 

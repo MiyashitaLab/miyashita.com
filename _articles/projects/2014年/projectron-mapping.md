@@ -1,12 +1,14 @@
 ---
 title: Projectron Mapping
-date: 2014-10-08 10:51:39 Z
-categories:
-- Programming Experience
 id: 794
 comment: false
+categories:
+  - Programming Experience
+date: 2014-10-08 10:51:39
+tags:
 visibleOnTopPage: true
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N3dJ4XRDF1I" frameborder="0" allowfullscreen></iframe>
 

@@ -1,10 +1,11 @@
 ---
 title: Camera Shake Sequencer：ブレた写真を撮る新しいカメラの研究
-date: 2010-02-01 15:10:25 Z
-categories:
-- Visual Media
 id: 1003
 comment: false
+categories:
+  - Visual Media
+date: 2010-02-01 15:10:25
+tags:
 ---
 
 [![nakabayashi_paper](/wp-content/uploads/2015/05/nakabayashi_paper.jpg)](/wp-content/uploads/2015/05/nakabayashi_paper.jpg)

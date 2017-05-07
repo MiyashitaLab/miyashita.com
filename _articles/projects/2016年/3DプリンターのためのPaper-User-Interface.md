@@ -1,11 +1,13 @@
 ---
 title: 3DプリンターのためのPaper User Interface
-date: 2016-12-13 17:36:15 Z
-categories:
-- Digital Fabrication
 id: 2573
 comment: false
+categories:
+  - Digital Fabrication
+date: 2016-12-13 17:36:15
+tags:
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/54m38d4nUgg" frameborder="0" allowfullscreen></iframe>
 

@@ -1,11 +1,13 @@
 ---
 title: Fitter
-date: 2016-10-17 11:57:40 Z
-categories:
-- Digital Fabrication
 id: 2197
 comment: false
+categories:
+  - Digital Fabrication
+date: 2016-10-17 11:57:40
+tags:
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DO-5nfyj7cY" frameborder="0" allowfullscreen></iframe>
 

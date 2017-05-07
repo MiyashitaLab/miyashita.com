@@ -1,11 +1,13 @@
 ---
-title: LayEditor:レイヤ機能を用いたテキストエディタ
-date: 2011-03-01 15:01:02 Z
-categories:
-- Visual Media
+title: 'LayEditor:レイヤ機能を用いたテキストエディタ'
 id: 927
 comment: false
+categories:
+  - Visual Media
+date: 2011-03-01 15:01:02
+tags:
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6U7QYreNN-k" frameborder="0" allowfullscreen></iframe>
 

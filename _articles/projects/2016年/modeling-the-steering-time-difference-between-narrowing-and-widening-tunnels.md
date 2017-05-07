@@ -1,11 +1,13 @@
 ---
 title: Modeling the Steering Time Difference between Narrowing and Widening Tunnels
-date: 2016-05-10 12:19:35 Z
-categories:
-- Human Interface
 id: 2490
 comment: false
+categories:
+  - Human Interface
+date: 2016-05-10 12:19:35
+tags:
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/luyVAb80l1g" frameborder="0" allowfullscreen></iframe>
 

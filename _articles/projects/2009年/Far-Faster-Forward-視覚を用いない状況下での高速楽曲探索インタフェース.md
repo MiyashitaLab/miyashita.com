@@ -1,10 +1,11 @@
 ---
-title: Far Faster Forward:視覚を用いない状況下での高速楽曲探索インタフェース
-date: 2009-04-29 20:43:00 Z
-categories:
-- Human Interface
+title: 'Far Faster Forward:視覚を用いない状況下での高速楽曲探索インタフェース'
 id: 863
 comment: false
+categories:
+  - Human Interface
+date: 2009-04-29 20:43:00
+tags:
 ---
 
 [![fff-thumb](/wp-content/uploads/2015/04/fff-thumb.jpg)](/wp-content/uploads/2015/04/fff-thumb.jpg)

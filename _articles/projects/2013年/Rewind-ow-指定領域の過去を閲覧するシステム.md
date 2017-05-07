@@ -1,11 +1,13 @@
 ---
 title: 'Rewind-ow: 指定領域の過去を閲覧するシステム'
-date: 2013-04-29 20:31:25 Z
-categories:
-- Human Interface
 id: 845
 comment: false
+categories:
+  - Human Interface
+date: 2013-04-29 20:31:25
+tags:
 ---
+
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/EhobWJH468s" frameborder="0" allowfullscreen></iframe>
 

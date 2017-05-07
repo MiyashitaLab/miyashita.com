@@ -1,10 +1,11 @@
 ---
 title: 'Light Brake Effect: 光が減速した世界'
-date: 2010-05-29 20:17:16 Z
-categories:
-- 3DCG，VR，AR
 id: 812
 comment: false
+categories:
+  - 3DCG，VR，AR
+date: 2010-05-29 20:17:16
+tags:
 ---
 
 [![秋山2-thumb-200x227-thumb-200x227](/wp-content/uploads/2015/03/秋山2-thumb-200x227-thumb.jpg)](/wp-content/uploads/2015/03/秋山2-thumb-200x227-thumb.jpg)

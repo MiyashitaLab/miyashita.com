@@ -1,11 +1,13 @@
 ---
 title: MilboxTouch
-date: 2016-03-17 14:53:12 Z
-categories:
-- 3DCG，VR，AR
 id: 2469
 comment: false
+categories:
+  - 3DCG，VR，AR
+date: 2016-03-17 14:53:12
+tags:
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xln-u1i9BXY" frameborder="0" allowfullscreen></iframe>
 

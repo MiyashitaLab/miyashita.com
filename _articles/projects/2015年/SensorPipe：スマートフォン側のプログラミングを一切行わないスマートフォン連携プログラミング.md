@@ -1,11 +1,13 @@
 ---
 title: SensorPipe：スマートフォン側のプログラミングを一切行わないスマートフォン連携プログラミング
-date: 2015-12-02 00:00:36 Z
-categories:
-- Programming Experience
 id: 2453
 comment: false
+categories:
+  - Programming Experience
+date: 2015-12-02 00:00:36
+tags:
 ---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gwKyPqt2kd8" frameborder="0" allowfullscreen></iframe>
 

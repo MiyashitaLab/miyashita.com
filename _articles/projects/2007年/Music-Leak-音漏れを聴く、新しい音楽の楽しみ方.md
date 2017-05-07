@@ -1,10 +1,11 @@
 ---
 title: 'Music Leak: 音漏れを聴く、新しい音楽の楽しみ方'
-date: 2007-04-29 20:46:35 Z
-categories:
-- Human Interface
 id: 872
 comment: false
+categories:
+  - Human Interface
+date: 2007-04-29 20:46:35
+tags:
 ---
 
 [![musicleak](/wp-content/uploads/2015/04/musicleak.jpg)](/wp-content/uploads/2015/04/musicleak.jpg)

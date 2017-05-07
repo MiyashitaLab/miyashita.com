@@ -1,11 +1,13 @@
 ---
 title: ラジオマーカー：仮想オブジェクト位置に音像を表現するARマーカ
-date: 2010-05-01 14:57:38 Z
-categories:
-- 拡張現実感
 id: 914
 comment: false
+categories:
+  - 拡張現実感
+date: 2010-05-01 14:57:38
+tags:
 ---
+
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/MvyQmyapAZA" frameborder="0" allowfullscreen></iframe>
 

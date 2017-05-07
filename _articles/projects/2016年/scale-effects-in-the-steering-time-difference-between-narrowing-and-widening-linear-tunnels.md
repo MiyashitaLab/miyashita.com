@@ -1,11 +1,13 @@
 ---
-title: Scale Effects in the Steering Time Difference between Narrowing and Widening
+title: >-
+  Scale Effects in the Steering Time Difference between Narrowing and Widening
   Linear Tunnels
-date: 2016-10-23 12:19:45 Z
-categories:
-- Human Interface
 id: 2493
 comment: false
+categories:
+  - Human Interface
+date: 2016-10-23 12:19:45
+tags:
 ---
 
 ![nordichi2016](/wp-content/uploads/2016/11/nordichi2016.jpg)

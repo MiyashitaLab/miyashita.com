@@ -1,10 +1,11 @@
 ---
 title: 4-Danmension：デュアル断面図による４次元空間の表現
-date: 2008-05-29 20:26:08 Z
-categories:
-- 3DCG，VR，AR
 id: 829
 comment: false
+categories:
+  - 3DCG，VR，AR
+date: 2008-05-29 20:26:08
+tags:
 ---
 
 [![4dposter1](/wp-content/uploads/2015/04/4dposter1.jpg)](/wp-content/uploads/2015/04/4dposter1.jpg)
