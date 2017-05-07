@@ -1,6 +1,6 @@
 ---
 title: 'CatchyAccount:金額の知覚的解釈を促す家計簿'
-id: 768
+_id: 768
 comment: false
 categories:
   - 認知ツール

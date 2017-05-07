@@ -1,6 +1,6 @@
 ---
 title: 'Cross-drag: 細長いターゲットのドラッグを容易にする操作手法'
-id: 915
+_id: 915
 comment: false
 categories:
   - Human Interface

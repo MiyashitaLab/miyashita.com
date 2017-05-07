@@ -1,6 +1,6 @@
 ---
 title: 組み換え可能なARマーカの提案
-id: 752
+_id: 752
 comment: false
 categories:
   - Entertainment Computing

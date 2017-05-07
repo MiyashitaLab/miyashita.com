@@ -1,6 +1,6 @@
 ---
 title: 'Balloon Chat: 発言されないコメントも浮かばれるチャット'
-id: 1084
+_id: 1084
 comment: false
 categories:
   - コミュニケーション

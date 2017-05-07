@@ -1,7 +1,7 @@
 const headerEl = document.querySelector('header');
 
+// Word wrap for Japanese
 const titleElList = headerEl.querySelectorAll('header h1');
-
 titleElList.forEach((titleEl) => {
   const wrapDivEl = document.createElement('div');
 
@@ -17,6 +17,7 @@ titleElList.forEach((titleEl) => {
   titleEl.innerHTML = wrapDivEl.innerHTML;
 });
 
+// Hide related video in Youtube iframe
 const youtubeElList = document.querySelectorAll('.markdown-body iframe[src*="youtube"]');
 youtubeElList.forEach((youtubeEl, idx) => {
   let src = youtubeEl.getAttribute('src');

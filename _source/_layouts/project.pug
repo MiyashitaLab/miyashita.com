@@ -20,6 +20,6 @@ block body
         | {{ content }}
         p.border-top.px1.pt1
           | {% for category in page.categories %}
-          a(href="{{ site.url }}/projects/categories#{{ category | slugify }}")
-            small.mr2.tag &#x23;{{ category }}
+          a.mr2.tag(href="{{ site.url }}/projects/categories#{{ category | slugify }}")
+            small &#x23;{{ category }}
           | {% endfor %}

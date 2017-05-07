@@ -1,6 +1,6 @@
 ---
 title: 'Gravity Pianist : 楽器の解体・再配置による音楽表現環境'
-id: 883
+_id: 883
 comment: false
 categories:
   - 聴覚コンテンツ

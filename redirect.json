@@ -1,0 +1,9 @@
+---
+---
+{% assign documents = (site.documents | where_exp: "item", "item._id") %}
+{
+  {% for page in documents %}
+  "{{ page._id }}": "{{ site.url }}{{ page.url }}",
+  {% endfor %}
+  "": "/"
+}

@@ -1,6 +1,6 @@
 ---
 title: File Based Programming ファイルを用いた新たなプログラミング手法の提案
-id: 972
+_id: 972
 comment: false
 categories:
   - Programming Experience

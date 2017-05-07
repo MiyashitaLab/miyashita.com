@@ -1,6 +1,6 @@
 ---
 title: ExtensionSticker
-id: 714
+_id: 714
 comment: false
 categories:
   - Human Interface

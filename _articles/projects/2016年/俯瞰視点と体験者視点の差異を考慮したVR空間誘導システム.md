@@ -1,6 +1,6 @@
 ---
 title: 俯瞰視点と体験者視点の差異を考慮したVR空間誘導システム
-id: 2583
+_id: 2583
 comment: false
 categories:
   - 3DCG，VR，AR

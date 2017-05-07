@@ -1,6 +1,6 @@
 ---
 title: 'Far Faster Forward:視覚を用いない状況下での高速楽曲探索インタフェース'
-id: 863
+_id: 863
 comment: false
 categories:
   - Human Interface

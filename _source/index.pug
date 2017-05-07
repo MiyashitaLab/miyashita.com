@@ -8,6 +8,8 @@ block first
 block head
   title 明治大学 宮下研究室
   link(rel="stylesheet", href="{{ site.url }}/style/index.css")
+  script.
+    if (/p=\d+/.test(location.search)) location.href = '/redirect/' + location.search;
   script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js")
   script(src="{{ site.url }}/script/index.js", defer)
@@ -39,25 +41,33 @@ block body
         | {% assign projects = (site.articles | where: "layout", "project" | where: "visibleOnTopPage", true | sort: "title" | sort: "date" | reverse | shift: 4) %}
         | {% for project in projects %}
         | {% if project.layout == "project" %}
-        li.col.col-12.md-col-6.lg-col-4.p2
-          a.article-card(href="{{project.url}}")
+        li.col.col-12.sm-col-6.md-col-6.lg-col-4.p2
+          a.article-card(href="{{ project.url }}")
             .image-16-9.rounded(style="background-image:url(\"{{ project.thumbnail }}\");")
             .px2.py1
               p.m0 {{ project.title }}
         | {% endif %}
         | {% endfor %}
+      p.m0.pb1.right-align
+        | #[a(href="/awards") 受賞一覧] / #[a(href="/grants") 助成一覧]
       p.m0.right-align
         a(href="{{ site.url }}/projects") すべてのプロジェクトは こちらから >
 
     section#members
       h2 Members
       .members-container.flex.flex-wrap
-        | {% assign members = (site.articles | where: "layout", "member" | sort: "title" | sort: "school_year" | reverse | sort: "category") %}
+        | {% assign categories = (site.articles | where: "layout", "member" | group_by: "category" | sort: "name") %}
+        | {% for category in categories %}
+        | {% if category.name != "99_OB" %}
+        | {% assign group_by_year = (category.items | group_by: "school_year" | sort: "name" | reverse) %}
+        | {% for group in group_by_year %}
+        | {% assign members = (group.items | sort: "title") %}
         | {% for member in members %}
-        | {% if member.category != "99_OB" %}
-        a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
+        a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{ member.url }}")
           .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
           p.m0 {{ member.title }}
+        | {% endfor %}
+        | {% endfor %}
         | {% endif %}
         | {% endfor %}
       p.m0.right-align

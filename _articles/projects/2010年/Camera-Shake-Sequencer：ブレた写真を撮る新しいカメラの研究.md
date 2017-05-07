@@ -1,6 +1,6 @@
 ---
 title: Camera Shake Sequencer：ブレた写真を撮る新しいカメラの研究
-id: 1003
+_id: 1003
 comment: false
 categories:
   - Visual Media

@@ -1,6 +1,6 @@
 ---
 title: HAMIGAKI-K.O.：歯ブラシ付きiPhoneによるオンライン対戦
-id: 946
+_id: 946
 comment: false
 categories:
   - Entertainment Computing

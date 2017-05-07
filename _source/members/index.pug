@@ -7,6 +7,7 @@ block first
 
 block head
   title Members | 明治大学 宮下研究室
+  meta(name="robots", content="noindex")
   link(rel="stylesheet", href="{{ site.url }}/style/index.css")
 
 block body
@@ -17,19 +18,31 @@ block body
       h1 Members
       h2 Current members
       .members-container.flex.flex-wrap
-        | {% assign members = (site.articles | where: "layout", "member" | sort: "title" | sort: "class" | reverse | sort: "school_year" | reverse | sort: "category") %}
+        | {% assign categories = (site.articles | where: "layout", "member" | group_by: "category" | sort: "name") %}
+        | {% for category in categories %}
+        | {% if category.name != "99_OB" %}
+        | {% assign group_by_year = (category.items | group_by: "school_year" | sort: "name" | reverse) %}
+        | {% for group in group_by_year %}
+        | {% assign members = (group.items | sort: "title") %}
         | {% for member in members %}
-        | {% if member.category != "99_OB" %}
         a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
           .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
           p.m0 {{ member.title }}
+        | {% endfor %}
+        | {% endfor %}
         | {% endif %}
         | {% endfor %}
       h2 OB members
+        | {% for category in categories %}
+        | {% if category.name == "99_OB" %}
+        | {% assign group_by_class = (category.items | group_by: "class" | sort: "name" | reverse) %}
+        | {% for group in group_by_class %}
+        | {% assign members = (group.items | sort: "title") %}
         | {% for member in members %}
-        | {% if member.category == "99_OB" %}
         a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
           .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
           p.m0 {{ member.title }}
+        | {% endfor %}
+        | {% endfor %}
         | {% endif %}
         | {% endfor %}

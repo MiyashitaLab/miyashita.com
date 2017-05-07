@@ -1,0 +1,13 @@
+body {
+  background: #EEEEEE;
+}
+
+main {
+  background: #FFFFFF;
+
+  & a[href^="http"]:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f08e";
+    margin: 0 3px;
+  }
+}

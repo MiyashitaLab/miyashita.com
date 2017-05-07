@@ -1,6 +1,7 @@
-host: 0.0.0.0
+host: 'localhost'
 port: 8000
 baseurl: ''
+repository: MiyashitaLab/miyashita.com
 url: https://test.miyashita.com
 permalink: /:year/:title
 title: 明治大学 宮下研究室

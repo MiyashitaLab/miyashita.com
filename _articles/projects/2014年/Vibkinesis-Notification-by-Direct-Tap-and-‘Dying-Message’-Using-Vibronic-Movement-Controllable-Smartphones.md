@@ -2,7 +2,7 @@
 title: >-
   Vibkinesis: Notification by Direct Tap and ‘Dying Message’ Using Vibronic
   Movement Controllable Smartphones
-id: 928
+_id: 928
 comment: false
 categories:
   - Human Interface

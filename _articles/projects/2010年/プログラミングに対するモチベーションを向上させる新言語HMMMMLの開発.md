@@ -1,6 +1,6 @@
 ---
 title: プログラミングに対するモチベーションを向上させる新言語HMMMMLの開発
-id: 971
+_id: 971
 comment: false
 categories:
   - Programming Experience

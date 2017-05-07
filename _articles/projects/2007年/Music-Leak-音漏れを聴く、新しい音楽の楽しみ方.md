@@ -1,6 +1,6 @@
 ---
 title: 'Music Leak: 音漏れを聴く、新しい音楽の楽しみ方'
-id: 872
+_id: 872
 comment: false
 categories:
   - Human Interface

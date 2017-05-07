@@ -1,0 +1,23 @@
+extends /_base.pug
+
+block first
+  | ---
+  | ---
+  |
+
+block head
+  title Redirecting... | 明治大学 宮下研究室
+  meta(name="robots", content="noindex")
+  link(rel="stylesheet", href="{{ site.url }}/style/index.css")
+  script(src="https://cdn.polyfill.io/v2/polyfill.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js")
+  script(src="https://unpkg.com/sush")
+  script(src="https://unpkg.com/sush-plugin-add-object")
+  script(src="https://unpkg.com/sush-plugin-redirect")
+  script(src="{{ site.url }}/script/redirect.js", defer)
+
+block body
+  .nav-padding
+
+  main.max-width-4.mx-auto.p2.pb4
+    h1 Redirecting...

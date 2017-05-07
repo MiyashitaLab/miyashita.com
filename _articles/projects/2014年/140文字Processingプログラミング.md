@@ -1,6 +1,6 @@
 ---
 title: 140文字Processingプログラミング
-id: 2440
+_id: 2440
 comment: false
 categories:
   - コミュニケーション

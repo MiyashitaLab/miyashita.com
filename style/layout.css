@@ -42,8 +42,7 @@ nav {
   background: rgba(255, 255, 255, .95);
   font-weight: bolder;
   border-bottom: 1px solid #E0E0E0;
-  height: 48px;
-  height: 3.0rem
+  height: auto
 }
 
 nav a{

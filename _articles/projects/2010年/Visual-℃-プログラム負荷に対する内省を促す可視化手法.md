@@ -1,6 +1,6 @@
 ---
 title: 'Visual ℃: プログラム負荷に対する内省を促す可視化手法'
-id: 956
+_id: 956
 comment: false
 categories:
   - Programming Experience

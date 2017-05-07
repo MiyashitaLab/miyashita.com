@@ -19,6 +19,8 @@ block body
   main.max-width-4.mx-auto.px1.pb2
     section#projects
       h1 Projects
+      p.p1 カテゴリ別は#[a(href="./categories") こちらから]
+      p.p1 #[a(href="/awards") 受賞一覧] / #[a(href="/grants") 助成一覧]
       | {% assign projects_groups_by_year = (site.articles | where: "layout", "project" | group_by_exp: "item", "item.date | date: '%Y'" | sort: "name" | reverse) %}
       | {% for projects_group in projects_groups_by_year %}
       .p1

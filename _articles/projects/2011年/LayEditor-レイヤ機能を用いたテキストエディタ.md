@@ -1,6 +1,6 @@
 ---
 title: 'LayEditor:レイヤ機能を用いたテキストエディタ'
-id: 927
+_id: 927
 comment: false
 categories:
   - Visual Media

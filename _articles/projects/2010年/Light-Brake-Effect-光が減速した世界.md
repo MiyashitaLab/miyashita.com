@@ -1,6 +1,6 @@
 ---
 title: 'Light Brake Effect: 光が減速した世界'
-id: 812
+_id: 812
 comment: false
 categories:
   - 3DCG，VR，AR

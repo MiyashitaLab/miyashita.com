@@ -1,6 +1,6 @@
 ---
 title: 'Bar-code Based Community: ソフト/ハードの区別なく同じツールのユーザ同士を繋げる仕組み'
-id: 916
+_id: 916
 comment: false
 categories:
   - コミュニケーション
