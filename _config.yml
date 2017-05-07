@@ -95,16 +95,17 @@ prose:
           element: text
           label: タイトル
           placeholder: プロジェクト名
+      - name: visibleOnTopPage
+        field:
+          element: checkbox
+          label: 記事をトップページに表示する
+          help: とくにアピールしたい記事の場合にチェックを付けます
+          value: false
       - name: thumbnail
         field:
           element: text
           label: サムネイル URL
           help: トップに表示するときのサムネイル
-      - name: visibleOnTopPage
-        field:
-          element: checkbox
-          label: トップ画面に表示するか
-          value: false
       - name: categories
         field:
           element: text
