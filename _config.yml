@@ -2,7 +2,7 @@ host: 'localhost'
 port: 8000
 baseurl: ''
 repository: MiyashitaLab/miyashita.com
-url: https://test.miyashita.com
+url: https://miyashita.com
 permalink: /:year/:title
 title: 明治大学 宮下研究室
 markdown: kramdown
@@ -35,7 +35,7 @@ defaults:
       thumbnail: https://placehold.it/400x225?text=NO+IMAGE
 prose:
   rooturl: _articles
-  siteurl: https://test.miyashita.com
+  siteurl: https://miyashita.com
   media: assets
   ignore:
     - _config.yml
