@@ -6,6 +6,7 @@ categories:
   - Digital Fabrication
 date: 2016-10-17 00:00:32
 tags:
+thumbnail: https://i.ytimg.com/vi/fL9W5oxfj3g/mqdefault.jpg
 visibleOnTopPage: true
 ---
 

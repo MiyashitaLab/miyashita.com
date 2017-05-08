@@ -7,6 +7,7 @@ categories:
 date: 2015-04-26 01:53:45
 tags:
 visibleOnTopPage: true
+thumbnail: https://i.ytimg.com/vi/meiCpCgdenY/mqdefault.jpg
 ---
 
 
