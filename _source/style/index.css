@@ -9,9 +9,29 @@ header {
   background-color: #212121;
 }
 
+main {
+  & nav {
+    & a:hover,
+    & a:hover > * {
+      text-decoration: underline;
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+section {
+  padding-top: 3.0rem;
+  margin-top: -3.0rem;
+}
+
 .article-card {
   position: relative;
   height: 100%;
+  border-color: black;
+
+  & date {
+    color: black;
+  }
 }
 
 .image-16-9 {

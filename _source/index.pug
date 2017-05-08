@@ -20,17 +20,29 @@ block body
   header
 
   main.max-width-4.mx-auto.p2.pb4
+    nav.center
+      ul.list-reset.clearfix
+        a(href="#news")
+          li.col.col-4.inline-block.px1.border-right
+            | News
+        a(href="#projects")
+          li.col.col-4.inline-block.px1.border-right
+            | Projects
+        a(href="#members")
+          li.col.col-4.inline-block.px1
+            | Members
+
     section#news
       h2 News
       | {% raw %}
       ul.flex.flex-wrap.list-reset.m0
         li.col.col-12.sm-col-6.md-col-4.lg-col-3.border-box.p2(v-for="news in newsList")
-          .article-card.border.rounded
-            .image-16-9(v-bind:style="'background-image:url(\"'+news.image+'\");'")
-            .px2.py1
-              date.block.pr2 {{ news.date }}
-              p.m0.pl2
-                a(v-bind:href="news.url") {{ news.title }}
+          a(v-bind:href="news.url")
+            .article-card.border.rounded
+              .image-16-9(v-bind:style="'background-image:url(\"'+news.image+'\");'")
+              .px2.py1
+                date.block.pr2 {{ news.date }}
+                p.m0.pl2 {{ news.title }}
       | {% endraw %}
       p.m0.right-align
         a(href="https://news.miyashita.com") 過去の記事は こちらから >
