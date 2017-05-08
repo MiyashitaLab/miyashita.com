@@ -81,6 +81,12 @@ prose:
           label: 学年
           help: 学部3年生なら"3"、修士2年生なら"2"
           placeholder: 1
+      - name: year_of_graduation
+        field:
+          element: number
+          label: 卒業年度
+          help: 西暦で記入する
+          placeholder: e.g. 2017
       - name: class
         field:
           element: number

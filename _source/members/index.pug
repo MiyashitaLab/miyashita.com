@@ -33,9 +33,10 @@ block body
         | {% endif %}
         | {% endfor %}
       h2 OB members
+      .members-container.flex.flex-wrap
         | {% for category in categories %}
         | {% if category.name == "99_OB" %}
-        | {% assign group_by_class = (category.items | group_by: "class" | sort: "name" | reverse) %}
+        | {% assign group_by_class = (category.items | group_by: "year_of_graduation" | sort: "name" | reverse) %}
         | {% for group in group_by_class %}
         | {% assign members = (group.items | sort: "title") %}
         | {% for member in members %}
