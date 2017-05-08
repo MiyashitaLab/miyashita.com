@@ -10,6 +10,8 @@ block head
   link(rel="stylesheet", href="{{ site.url }}/style/index.css")
   script.
     if (/p=\d+/.test(location.search)) location.href = '/redirect/' + location.search;
+  script(src="https://cdn.polyfill.io/v2/polyfill.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js")
   script(src="{{ site.url }}/script/index.js", defer)
