@@ -60,10 +60,10 @@ block body
               p.m0 {{ project.title }}
         | {% endif %}
         | {% endfor %}
-      p.m0.pb1.right-align
-        | #[a(href="/awards") 受賞一覧] / #[a(href="/grants") 助成一覧]
       p.m0.right-align
         a(href="{{ site.url }}/projects") すべてのプロジェクトは こちらから >
+      p.m0.pb1.right-align
+        | #[a(href="/awards") 受賞一覧] / #[a(href="/grants") 助成一覧]
 
     section#members
       h2 Members
