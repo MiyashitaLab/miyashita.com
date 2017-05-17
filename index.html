@@ -9,7 +9,7 @@
 {% assign group_by_year = (category.items | group_by: "school_year" | sort: "name" | reverse) %}
 {% for group in group_by_year %}
 {% assign members = (group.items | sort: "title") %}
-{% for member in members %}<a class="link-card col col-4 sm-col-3 md-col-2 center p1" href="{{ member.url }}"><div class="avatar-wrap inline-block overflow-hidden rounded" style="background-image:url(&quot;{{ member.avatar }}&quot;);"></div><p class="m0">{{ member.title }}</p></a>{% endfor %}
+{% for member in members %}<a class="link-card col col-4 sm-col-3 md-col-2 center p1" href="{{ member.url }}"><div class="avatar-wrap inline-block overflow-hidden rounded" style="background-image:url(&quot;{{ member.avatar }}&quot;);"></div><p class="m0"><small class="mr1">{{ category.name | split: '_' | last }}{{ group.name }}</small><span class="link-color">{{ member.title }}</span></p></a>{% endfor %}
 {% endfor %}
 {% endif %}
 {% endfor %}</div><p class="m0 right-align"><a href="{{ site.url }}/members">OB・OG は こちらから ></a></p></section></main><footer><p class="m0 pt2 px2 center"><small>&copy; 宮下研究室</small></p><p class="m0 px2 center"><small>〒164-8525 東京都中野区中野 4-21-1</small></p><p class="m0 px2 center"><small>明治大学 総合数理学部 先端メディアサイエンス学科 宮下研究室</small></p><p class="m0 pb2 px2 center"><small>研究室：1018室　実験室：1017室</small></p></footer></body></html>

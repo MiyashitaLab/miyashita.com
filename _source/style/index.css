@@ -49,9 +49,20 @@ section {
 }
 
 .link-card {
+  color: inherit;
+
+  & .link-color {
+    color: #0366d6;
+  }
+
   &:active,
   &:hover {
     opacity: 0.5;
+    text-decoration: none;
+
+    & .link-color {
+      text-decoration: underline;
+    }
   }
 }
 

@@ -53,11 +53,21 @@ section {
 }
 
 .link-card {
+  color: inherit
+}
+
+.link-card .link-color{
+  color: #0366d6;
 }
 
 .link-card:active,
   .link-card:hover{
   opacity: 0.5;
+  text-decoration: none;
+}
+
+.link-card:active .link-color, .link-card:hover .link-color{
+  text-decoration: underline;
 }
 
 .avatar-wrap {

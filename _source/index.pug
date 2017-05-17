@@ -77,7 +77,9 @@ block body
         | {% for member in members %}
         a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{ member.url }}")
           .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
-          p.m0 {{ member.title }}
+          p.m0
+            small.mr1 {{ category.name | split: '_' | last }}{{ group.name }}
+            span.link-color {{ member.title }}
         | {% endfor %}
         | {% endfor %}
         | {% endif %}

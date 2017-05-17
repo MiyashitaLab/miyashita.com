@@ -67,18 +67,18 @@ prose:
         field:
           element: select
           label: カテゴリ
-          value: 04_学士課程
+          value: 04_B
           options:
             - name: 教員
               value: 00_教員
             - name: 研究員
               value: 01_研究員
             - name: 博士課程
-              value: 02_博士課程
+              value: 02_D
             - name: 修士課程
-              value: 03_修士課程
+              value: 03_M
             - name: 学士課程
-              value: 04_学士課程
+              value: 04_B
             - name: OB
               value: 99_OB
       - name: school_year
