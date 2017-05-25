@@ -13,10 +13,13 @@ kramdown:
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 twitter:
   username: miyashita_lab
 collections:
   articles:
+    output: true
+  redirects:
     output: true
 defaults:
   - scope:

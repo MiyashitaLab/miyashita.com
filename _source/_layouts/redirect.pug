@@ -1,0 +1,17 @@
+extends ../_base.pug
+
+block head
+  title {{ page.title }} | Redirect | 宮下研究室 - 明治大学 総合数理学部 先端メディアサイエンス学科
+  link(rel="canonical", href="{{ page.redirect.to }}")
+  meta(name="robots", content="noindex")
+  link(rel="stylesheet", href="{{ site.url }}/style/index.css")
+  meta(http-equiv="refresh", content="0; url={{ page.redirect.to }}")
+
+block body
+  .nav-padding
+  main.max-width-4.mx-auto.p2.pb4
+    h1
+      span.mr1 Redirecting to
+      a(href="{{ page.redirect.to }}") {{ page.redirect.to }}
+  script.
+    setTimeout(function () { location.href = "{{ page.redirect.to }}"; }, 1000);
