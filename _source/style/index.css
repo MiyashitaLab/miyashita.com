@@ -19,9 +19,13 @@ main {
   }
 }
 
-section {
-  padding-top: 3.0rem;
-  margin-top: -3.0rem;
+*[id$="-ref"] {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -3.0rem;
 }
 
 .article-card {
