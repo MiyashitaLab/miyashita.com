@@ -1,21 +1,5 @@
 const NOIMAGE_LINK = 'https://placehold.it/512x288?text=NO+IMAGE';
 
-const searchVm = new Vue({
-  el: '#search',
-  data: () => ({
-    researchLength: NaN,
-  }),
-  created() {
-    fetch('https://research.miyashita.com/sitemap.xml')
-      .then((res) => res.text())
-      .then((text) => (new DOMParser()).parseFromString(text, 'application/xml'))
-      .then((xml) => {
-        this.researchLength = xml.querySelectorAll('url').length - 1;
-      })
-      .catch((err) => console.error(err));
-  },
-});
-
 const newsVm = new Vue({
   el: '#news',
   data: () => ({

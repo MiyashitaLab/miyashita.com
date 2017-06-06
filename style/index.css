@@ -21,14 +21,11 @@ main nav a:hover,
   background: rgba(0, 0, 0, .05);
 }
 
-*[id$="-ref"] {
-  display: block;
-  content: "";
-  width: 0;
-  height: 0;
-  position: relative;
-  top: -48px;
-  top: -3.0rem;
+section {
+  padding-top: 48px;
+  padding-top: 3.0rem;
+  margin-top: -48px;
+  margin-top: -3.0rem;
 }
 
 .article-card {

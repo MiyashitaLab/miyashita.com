@@ -10,7 +10,6 @@ block head
   link(rel="stylesheet", href="{{ site.url }}/style/index.css")
   script.
     if (/p=\d+/.test(location.search)) location.href = '/redirect/' + location.search;
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js")
   script(src="{{ site.url }}/script/index.js", defer)
 
@@ -22,30 +21,17 @@ block body
   main.max-width-4.mx-auto.p2.pb4
     nav.center
       ul.list-reset.clearfix
-        a(href="#news-ref")
+        a(href="#news")
           li.col.col-4.inline-block.px1.border-right
             | News
-        a(href="#projects-ref")
+        a(href="#projects")
           li.col.col-4.inline-block.px1.border-right
             | Projects
-        a(href="#members-ref")
+        a(href="#members")
           li.col.col-4.inline-block.px1
             | Members
 
-    section#search
-      #search-ref
-      h2.center
-        a(href="https://research.miyashita.com")
-          span.mr1.nowrap.inline-block 宮下研究室
-          span.nowrap.inline-block 論文データベース
-          | {% raw %}
-          small.mx1.nowrap.inline-block {{ researchLength }} 件
-          | {% endraw %}
-      form(method="GET", action="https://research.miyashita.com/search").flex
-        input.flex-auto.p2.border(type="search", name="q", placeholder="論文検索")
-
     section#news
-      #news-ref
       h2 News
       | {% raw %}
       ul.flex.flex-wrap.list-reset.m0
@@ -61,7 +47,6 @@ block body
         a(href="https://news.miyashita.com") 過去の記事は こちらから >
 
     section#projects
-      #projects-ref
       h2 Projects
       ul.flex.flex-wrap.list-reset.m0
         | {% assign projects = (site.articles | where: "layout", "project" | where: "visibleOnTopPage", true | sort: "title" | sort: "date" | reverse | shift: 4) %}
@@ -80,7 +65,6 @@ block body
         | #[a(href="/awards") 受賞一覧] / #[a(href="/grants") 助成一覧]
 
     section#members
-      #members-ref
       h2 Members
       .members-container.flex.flex-wrap
         | {% assign categories = (site.articles | where: "layout", "member" | group_by: "category" | sort: "name") %}

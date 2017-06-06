@@ -1,5 +1,6 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css";
 @import "https://unpkg.com/basscss@8.0.2/css/basscss.min.css";
+@import "https://unpkg.com/basscss-responsive-typography@1.0.1/css/responsive-typography.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.4.1/github-markdown.min.css";
 @import "https://fonts.googleapis.com/css?family=Lato";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
@@ -57,13 +58,24 @@ nav {
     padding-bottom: 0.5rem;
     height: 2.0rem;
   }
+
+  & input[type="search"] {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent;
+  }
 }
 
 .nav-padding {
   maring: 0;
   padding: 0;
   display: block;
-  height: 3.0rem;
+  height: 6.0rem;
+
+  @media (min-width: 52em) {
+    height: 3.0rem;
+  }
 }
 
 footer {
