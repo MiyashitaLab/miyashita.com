@@ -5,7 +5,7 @@ const searchVm = new Vue({
   }),
   computed: {
     placeholder() {
-      return `論文データベース検索（${this.researchLength} 件）`
+      return `\uf002\x20論文データベース検索（${this.researchLength} 件）`
     },
   },
   created() {

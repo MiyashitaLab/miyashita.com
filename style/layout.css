@@ -73,7 +73,8 @@ nav input[type="search"]{
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  background-color: transparent
+  background-color: transparent;
+  font-family: "FontAwesome", 'Lato', -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif
 }
 
 .nav-padding {
