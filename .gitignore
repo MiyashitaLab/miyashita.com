@@ -120,3 +120,5 @@ build-iPhoneSimulator/
 .rvmrc
 
 # End of https://www.gitignore.io/api/node,ruby,jekyll
+
+_base.html

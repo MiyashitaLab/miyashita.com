@@ -5,20 +5,20 @@
 @import "https://fonts.googleapis.com/css?family=Lato";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
-html, body, .markdown-body {
+html, body, .markdown-body, input {
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif
 }
 
 @media (max-width: 375px) {
 
-  html, body, .markdown-body{
+  html, body, .markdown-body, input{
     font-size: 12px
   }
   }
 
 @media (min-width: 375px) and (max-width: 40em) {
 
-  html, body, .markdown-body{
+  html, body, .markdown-body, input{
     font-size: 14px
   }
   }
@@ -70,11 +70,7 @@ nav .logo{
 }
 
 nav input[type="search"]{
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  background-color: transparent;
-  font-family: "FontAwesome", 'Lato', -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif
+  background-color: transparent
 }
 
 .nav-padding {

@@ -21,9 +21,11 @@ html
               li.inline-block.mx1
                 img.logo(alt="宮下研究室", src="{{ site.url }}/assets/logo.png")
         #search.right.col.col-12.md-col-6.right-align
-          ul.m0.list-reset.py1
-            form(method="GET", action="https://research.miyashita.com/search").flex
-              input.flex-auto.p1.border-bottom.border-box(type="search", name="q", v-bind:placeholder="placeholder")
+          ul.m0.list-reset.p1
+            form(method="GET", action="https://research.miyashita.com/search").border-bottom
+              label.flex
+                i.fa.fa-search.p1
+                input.flex-auto.p1.border-none(type="search", name="q", v-bind:placeholder="placeholder")
     block body
     footer
       p.m0.pt2.px2.center
