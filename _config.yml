@@ -1,6 +1,20 @@
 host: 'localhost'
 port: 8000
 baseurl: ''
+exclude:
+  - _source
+  - node_modules
+  - .gitignore
+  - .babelrc
+  - .postcssrc
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - CNAME
+  - yarn.lock
+  - vendor
+  - .bundle
+  - .vscode
 repository: MiyashitaLab/miyashita.com
 url: https://miyashita.com
 permalink: /:year/:title

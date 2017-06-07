@@ -3,21 +3,19 @@
   "version": "0.0.0",
   "scripts": {
     "html:build": "pug _source --basedir _source --out ./",
-    "html:watch": "npm run html:build -- --watch",
     "style:build": "postcss \"_source/style/**/*.css\" --dir style",
-    "style:watch": "npm run style:build -- --watch",
     "assets:build": "cpx \"_source/assets/**/*\" assets",
-    "assets:watch": "npm run assets:build -- --watch",
     "script:build": "babel _source/script --out-dir script",
-    "script:watch": "npm run script:build -- --watch",
     "clean": "rimraf index.html _layouts style script members projects",
     "prewatch": "npm run clean",
-    "watch": "npm-run-all -p *:watch serve:jekyll",
+    "watch": "npm-run-all -p *:build -s -p serve:jekyll watch:main",
+    "watch:main": "npm-run-all -s serve:waiton -p \"*:build -- --watch\"",
     "prebuild": "npm run clean",
     "build": "npm-run-all -p *:build",
     "postbuild": "rimraf \"**/_*.html\"",
     "serve": "browser-sync start --no-open --server ./ --files ./ --port 8000",
-    "serve:jekyll": "cross-env SSL_CERT_FILE=\"cacert.pem\" bundle exec jekyll serve --watch",
+    "serve:jekyll": "cross-env SSL_CERT_FILE=\"cacert.pem\" bundle exec jekyll serve --watch --port 8000",
+    "serve:waiton": "wait-on http://localhost:8000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -37,6 +35,7 @@
     "postcss-cssnext": "^2.10.0",
     "pug": "^2.0.0-beta11",
     "pug-cli": "^1.0.0-alpha6",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "wait-on": "^2.0.2"
   }
 }
