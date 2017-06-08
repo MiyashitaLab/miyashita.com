@@ -15,7 +15,6 @@ exclude:
   - vendor
   - .bundle
   - .vscode
-  - wp-content
 repository: MiyashitaLab/miyashita.com
 url: https://miyashita.com
 permalink: /:year/:title
@@ -26,7 +25,6 @@ kramdown:
   input: GFM
   hard_wrap: false
 gems:
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
 twitter:
