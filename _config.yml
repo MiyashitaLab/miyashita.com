@@ -15,6 +15,7 @@ exclude:
   - vendor
   - .bundle
   - .vscode
+  - wp-content
 repository: MiyashitaLab/miyashita.com
 url: https://miyashita.com
 permalink: /:year/:title

@@ -70,7 +70,8 @@ nav .logo{
 }
 
 nav input[type="search"]{
-  background-color: transparent
+  background-color: transparent;
+  outline: none
 }
 
 .nav-padding {

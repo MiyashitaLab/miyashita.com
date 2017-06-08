@@ -61,6 +61,7 @@ nav {
 
   & input[type="search"] {
     background-color: transparent;
+    outline: none;
   }
 }
 
