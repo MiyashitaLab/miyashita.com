@@ -22,17 +22,21 @@ block body
     nav.center
       ul.list-reset.clearfix
         a(href="#news")
-          li.col.col-4.inline-block.px1.border-right
-            | News
+          li.col.col-3.inline-block.px1.border-right
+            | 最新情報
         a(href="#projects")
-          li.col.col-4.inline-block.px1.border-right
-            | Projects
+          li.col.col-3.inline-block.px1.border-right
+            | 研究内容
         a(href="#members")
-          li.col.col-4.inline-block.px1
-            | Members
+          li.col.col-3.inline-block.px1.border-right
+            | メンバー
+        a(href="https://research.miyashita.com")
+          li.col.col-3.inline-block.px1
+            span 論文DB
+            small #[i.ml1.fa.fa-external-link]
 
     section#news
-      h2 News
+      h2 最新情報
       | {% raw %}
       ul.flex.flex-wrap.list-reset.m0
         li.col.col-12.sm-col-6.md-col-4.lg-col-3.border-box.p2(v-for="news in newsList")
@@ -47,7 +51,7 @@ block body
         a(href="https://news.miyashita.com") 過去の記事は こちらから >
 
     section#projects
-      h2 Projects
+      h2 研究内容
       ul.flex.flex-wrap.list-reset.m0
         | {% assign projects = (site.articles | where: "layout", "project" | where: "visibleOnTopPage", true | sort: "title" | sort: "date" | reverse | shift: 4) %}
         | {% for project in projects %}
@@ -65,7 +69,7 @@ block body
         | #[a(href="/awards") 受賞一覧] / #[a(href="/grants") 助成一覧]
 
     section#members
-      h2 Members
+      h2 メンバー
       .members-container.flex.flex-wrap
         | {% assign categories = (site.articles | where: "layout", "member" | group_by: "category" | sort: "name") %}
         | {% for category in categories %}
