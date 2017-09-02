@@ -53,7 +53,7 @@ block body
     section#projects
       h2 研究内容
       ul.flex.flex-wrap.list-reset.m0
-        | {% assign projects = site.articles | where: "layout", "project" | where: "visibleOnTopPage", true | sort: "title" | sort: "date" | reverse | shift: 4 %}
+        | {% assign projects = site.articles | where: "layout", "project" | where: "visibleOnTopPage", true | sort: "title" | sort: "date" | reverse | slice: 0, 4 %}
         | {% for project in projects %}
         | {% if project.layout == "project" %}
         li.col.col-12.sm-col-6.md-col-6.lg-col-4.p2
