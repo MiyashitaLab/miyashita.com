@@ -20,7 +20,7 @@ block body
     section#projects
       h1 Categories
 
-      | {% assign projects = (site.articles | where: "layout", "project" | sort: "title" | sort: "date" | reverse) %}
+      | {% assign projects = site.articles | where: "layout", "project" | sort: "title" | sort: "date" | reverse %}
       | {% assign categories = "" | split: "/" %}
       | {% for project in projects %}
       |   {% for category in project.categories %}

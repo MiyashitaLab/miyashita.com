@@ -18,12 +18,12 @@ block body
       h1 Members
       h2 Current members
       .members-container.flex.flex-wrap
-        | {% assign categories = (site.articles | where: "layout", "member" | group_by: "category" | sort: "name") %}
+        | {% assign categories = site.articles | where: "layout", "member" | group_by: "category" | sort: "name" %}
         | {% for category in categories %}
         | {% if category.name != "99_OB" %}
-        | {% assign group_by_year = (category.items | group_by: "school_year" | sort: "name" | reverse) %}
+        | {% assign group_by_year = category.items | group_by: "school_year" | sort: "name" | reverse %}
         | {% for group in group_by_year %}
-        | {% assign members = (group.items | sort: "title") %}
+        | {% assign members = group.items | sort: "title" %}
         | {% for member in members %}
         a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
           .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
@@ -38,9 +38,9 @@ block body
       .members-container.flex.flex-wrap
         | {% for category in categories %}
         | {% if category.name == "99_OB" %}
-        | {% assign group_by_class = (category.items | group_by: "year_of_graduation" | sort: "name" | reverse) %}
+        | {% assign group_by_class = category.items | group_by: "year_of_graduation" | sort: "name" | reverse %}
         | {% for group in group_by_class %}
-        | {% assign members = (group.items | sort: "title") %}
+        | {% assign members = group.items | sort: "title" %}
         | {% for member in members %}
         a.link-card.col.col-4.sm-col-3.md-col-2.center.p1(href="{{member.url}}")
           .avatar-wrap.inline-block.overflow-hidden.rounded(style="background-image:url(\"{{ member.avatar }}\")")
