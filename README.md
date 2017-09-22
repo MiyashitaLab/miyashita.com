@@ -7,7 +7,7 @@
 ## Install
 ```bash
 yarn install
-bundle install --path vendor/bundler
+bundle install --path vendor/bundle
 ```
 
 ## Usage
