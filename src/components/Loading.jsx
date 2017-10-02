@@ -5,12 +5,24 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import styles from './Loading.css';
 
 class Loading extends React.Component {
+  static get defaultProps() {
+    return { wait: 1000 };
+  }
+
   constructor(props) {
     super(props);
+    this.timer = -1;
     this.state = {
       waiting: true,
     };
-    setTimeout(() => this.setState(() => ({ waiting: false })), props.wait || 1000);
+  }
+
+  componentDidMount() {
+    this.timer = setTimeout(() => this.setState({ waiting: false }), this.props.wait);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
   }
 
   render() {
