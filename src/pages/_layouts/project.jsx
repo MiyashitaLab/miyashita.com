@@ -1,7 +1,9 @@
 import React from 'react';
 
+import ContentWrapper from '../../components/ContentWrapper';
+
 export default () => (
-  <div>
+  <ContentWrapper>
     <h1>Hello World!</h1>
-  </div>
+  </ContentWrapper>
 );
