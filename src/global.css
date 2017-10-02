@@ -52,10 +52,18 @@ body {
   font-size: var(--fontSize);
   color: var(--textColor);
   background: var(--backgroundColor);
+
+  @media (--small-viewport) {
+    font-size: var(--fontSizeForMobile);
+  }
 }
 
 input {
   font-family: var(--fontFamily);
   font-size: var(--fontSize);
   color: var(--textColor);
+
+  @media (--small-viewport) {
+    font-size: var(--fontSizeForMobile);
+  }
 }

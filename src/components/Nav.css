@@ -49,11 +49,11 @@
 }
 
 .search-input-wrapper {
-  max-width: 320px;
-  width: 320px;
+  min-width: calc(var(--maxWidth) / 4 - 15px);
+  flex: 0 1 320px;
 
   @media (--small-viewport) {
-    max-width: initial;
-    width: 100%;
+    min-width: initial;
+    flex: 1;
   }
 }
