@@ -1,0 +1,22 @@
+@import 'shared/variable.css';
+
+.base {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  padding: 15px;
+  width: 100%;
+  max-width: var(--maxWidth);
+  box-sizing: border-box;
+}
+
+.transition-wrapper {
+  display: flex;
+  flex: 1;
+}

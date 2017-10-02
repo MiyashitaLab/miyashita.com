@@ -1,0 +1,25 @@
+{%- if include.slim == 'true' -%}
+  {%- assign ignore_keys = 'next,previous,output,permalink,relative_path,path,ext,draft,excerpt,content' | split: ',' -%}
+{%- else -%}
+  {%- assign ignore_keys = 'next,previous,output,permalink,relative_path,path,ext,draft' | split: ',' -%}
+{%- endif -%}
+
+{%- assign keys = '' | split: ',' -%}
+{%- for keyval in include.data -%}
+  {%- if keyval.first -%}
+    {%- assign key = keyval[0] -%}
+  {%- else -%}
+    {%- assign key = keyval -%}
+  {%- endif -%}
+  {%- unless ignore_keys contains key -%}
+    {%- assign keys = keys | push: key -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+{
+{%- for key in keys -%}
+  {%- assign value = include.data[key] -%}
+  {{- key | jsonify -}}: {%- include jsonify.json data=value slim=include.slim -%}
+  {%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+}

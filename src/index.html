@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {% seo title=false %}
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
+  {% if page.url == "/members/" -%}
+    {%- assign members = site.articles | where: "layout", "member" -%}
+    <script type="application/json" id="jekyll-data">
+      {"members":{%- include jsonify.json data=members slim='true' -%},
+      "page":{%- include jsonify.json data=page -%}}
+    </script>
+  {%- elsif page.url == "/projects/" -%}
+    {%- assign projects = site.articles | where: "layout", "projects" -%}
+    <script type="application/json" id="jekyll-data">
+      {"projects":{%- include jsonify.json data=projects slim='true' -%},
+       "page":{%- include jsonify.json data=page -%}}
+    </script>
+  {%- elsif page.url == "/redirect/" -%}
+    <script type="application/json" id="jekyll-data">
+      {%- include redirect.json -%}
+    </script>
+  {%- elsif page.url == "/" -%}
+    {%- assign members = site.articles | where: "layout", "member" | where_exp: "member", "member.category != '99_OB'" -%}
+    {%- assign projects = site.articles | where: "layout", "project" | where: "visibleOnTopPage", true -%}
+    <script type="application/json" id="jekyll-data">
+      {"projects":{%- include jsonify.json data=projects slim='true' -%},
+       "members":{%- include jsonify.json data=members slim='true' -%},
+       "page":{%- include jsonify.json data=page slim='true' -%}}
+    </script>
+  {%- else -%}
+    <script type="application/json" id="jekyll-data">
+      {"page":{%- include jsonify.json data=page -%}}
+    </script>
+  {%- endif %}
+
+  <link rel="stylesheet" href="/styles/client.css">
+  <script src="/scripts/client.js" async></script>
+  <style type="text/css" data-ssr=""><%- css %></style>
+</head>
+
+<body>
+  <div id="root"><%- markup %></div>
+</body>
+
+</html>

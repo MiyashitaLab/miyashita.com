@@ -1,0 +1,61 @@
+@import 'shared/variable.css';
+
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 100;
+  src: local('YuGothic-Light'), local('Yu Gothic Light');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 200;
+  src: local('YuGothic-Light'), local('Yu Gothic Light');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 300;
+  src: local('YuGothic-Regular'), local('Yu Gothic');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 400;
+  src: local('YuGothic-Medium'), local('Yu Gothic Medium'), local('YuGothic-Regular'), local('Yu Gothic');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 500;
+  src: local('YuGothic-Medium'), local('Yu Gothic Medium'), local('YuGothic-Regular'), local('Yu Gothic');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 600;
+  src: local('YuGothic-Bold'), local('Yu Gothic');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 700;
+  src: local('YuGothic-Bold'), local('Yu Gothic');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 800;
+  src: local('YuGothic-Bold'), local('Yu Gothic');
+}
+@font-face {
+  font-family: 'YuGothicNormalized';
+  font-weight: 900;
+  src: local('YuGothic-Bold'), local('Yu Gothic');
+}
+
+html,
+body {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  color: var(--textColor);
+  background: var(--backgroundColor);
+}
+
+input {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  color: var(--textColor);
+}

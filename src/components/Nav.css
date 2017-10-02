@@ -1,0 +1,59 @@
+@import 'shared/variable.css';
+
+.base {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 0.5em 0 color(var(--black) alpha(0.25));
+  background: var(--backgroundColor);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: var(--maxWidth);
+  box-sizing: border-box;
+}
+
+.col {
+  display: flex;
+  flex: 1 0 50%;
+  height: 3em;
+  align-items: center;
+
+  @media (--small-viewport) {
+    flex: 1 0 100%;
+  }
+}
+
+.right-col {
+  @media (--small-viewport) {
+    justify-content: center;
+  }
+}
+
+.left-col {
+  justify-content: flex-end;
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 2em;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.search-input-wrapper {
+  max-width: 320px;
+  width: 320px;
+
+  @media (--small-viewport) {
+    max-width: initial;
+    width: 100%;
+  }
+}

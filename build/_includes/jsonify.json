@@ -1,0 +1,28 @@
+{%- if include.data.first -%}
+  {%- for item in include.data -%}
+    {%- if forloop.first != true and forloop.last != true -%}
+      {%- continue -%}
+    {%- elsif forloop.first -%}
+      {%- if item == include.data.first -%}
+        {%- assign probably_array = true -%}
+        {%- if forloop.last -%}
+          {%- include array.json data=include.data slim=include.slim -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- include object.json data=include.data slim=include.slim -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- elsif forloop.last -%}
+      {%- if probably_array and item == include.data.last -%}
+        {%- include array.json data=include.data slim=include.slim -%}
+        {%- break -%}
+      {%- else -%}
+        {%- include object.json data=include.data slim=include.slim -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {{- include.data | jsonify -}}
+{%- endif -%}

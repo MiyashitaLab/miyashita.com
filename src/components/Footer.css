@@ -1,0 +1,17 @@
+@import 'shared/variable.css';
+
+.base {
+  background: var(--black);
+  color: var(--white);
+  padding: 1em 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: var(--maxWidth);
+  box-sizing: border-box;
+}

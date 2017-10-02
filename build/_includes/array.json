@@ -1,0 +1,6 @@
+[
+{%- for item in include.data -%}
+  {%- include jsonify.json data=item slim=include.slim -%}
+  {%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]

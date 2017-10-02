@@ -1,0 +1,18 @@
+:root {
+  --fontFamily: 'YuGothicNormalized', YuGothic, system-ui;
+
+  /* Size */
+  --fontSize: 16px;
+  --maxWidth: 1024px;
+
+  /* Colors */
+  --white: #fdfdfd;
+  --black: #424242;
+  --lightGray: #eeeeee;
+  --gray: #9e9e9e;
+
+  --textColor: var(--black);
+  --backgroundColor: var(--white);
+
+  @custom-media --small-viewport (max-width: 512px);
+}
