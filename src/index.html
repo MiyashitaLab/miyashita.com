@@ -28,7 +28,7 @@ layout: compress
     </script>
   {%- elsif page.url == "/" -%}
     {%- assign members = site.articles | where: "layout", "member" | where_exp: "member", "member.category != '99_OB'" -%}
-    {%- assign projects = site.articles | where: "layout", "project" | where: "visibleOnTopPage", true -%}
+    {%- assign projects = site.articles | where: "layout", "project" | where: "visibleOnTopPage", true | reverse -%}
     <script type="application/json" id="jekyll-data">
       {"projects":{%- include jsonify.json data=projects slim='true' -%},
        "members":{%- include jsonify.json data=members slim='true' -%},

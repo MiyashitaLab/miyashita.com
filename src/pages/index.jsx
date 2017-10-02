@@ -5,9 +5,12 @@ import styles from './index.css';
 
 import ContentWrapper from '../components/ContentWrapper';
 import HeaderImage from '../components/HeaderImage';
+import ThumbnailList from '../components/ThumbnailList';
 
 class Index extends React.Component {
   render() {
+    const { data } = this.props;
+    const { projects } = data;
     return (
       <div className={styles.base}>
         <HeaderImage
@@ -15,7 +18,9 @@ class Index extends React.Component {
           alt="Miyashita Lab"
         />
         <ContentWrapper>
-          <h1>最新情報</h1>
+          <h2>最新情報</h2>
+          <h2>プロジェクト</h2>
+          <ThumbnailList items={projects} />
         </ContentWrapper>
       </div>
     );

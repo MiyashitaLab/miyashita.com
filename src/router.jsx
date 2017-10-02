@@ -19,6 +19,10 @@ const isServer = !ExecutionEnvironment.canUseDOM;
 
 const mockJekyllData = () => ({
   page: new Proxy({}, { get: (_target, name) => `{{ page.${name} }}` }),
+  projects: Array.from(Array(5)).map((_, idx) => {
+    return new Proxy({}, { get: (_target, name) => `{{ projects[${idx}].${name} }}` });
+  }),
+  members: [],
 });
 
 function getData({ location }) {
