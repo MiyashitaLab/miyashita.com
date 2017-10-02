@@ -118,3 +118,7 @@ typings/
 
 # Script for prerendering
 /script/
+
+# Lockfile
+/Gemfile.lock
+/yarn.lock
