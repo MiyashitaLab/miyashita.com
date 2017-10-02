@@ -127,10 +127,11 @@ const config = {
 
 if (!isProduction) {
   config.devServer = {
-    historyApiFallback: true,
     contentBase: path.join(__dirname, '../build'),
     hot: true,
+    host: '0.0.0.0',
     port: 3000,
+    disableHostCheck: true,
     publicPath: '/',
     proxy: {
       '/': 'http://localhost:8000',
