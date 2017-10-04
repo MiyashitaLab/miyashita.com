@@ -1,11 +1,11 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { Link } from 'found';
 import Sticky from 'react-stickynode';
 
 import styles from './Nav.css';
 import logoImgPath from '../assets/logo.png';
 
+import Link from './Link';
 import SearchInput from './SearchInput';
 
 const Nav = () => (

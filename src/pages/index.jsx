@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'found';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import styles from './index.css';
 import headerImagePath from '../assets/header.jpg';

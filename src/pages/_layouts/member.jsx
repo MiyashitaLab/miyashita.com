@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'found';
 
 import ContentWrapper from '../../components/ContentWrapper';
 import JekyllContent from '../../components/JekyllContent';

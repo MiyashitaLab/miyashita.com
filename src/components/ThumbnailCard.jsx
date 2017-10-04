@@ -1,18 +1,22 @@
 import React from 'react';
-import { Link } from 'found';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import format from 'date-fns/format';
 import styles from './ThumbnailCard.css';
 
+import Link from './Link';
+import NoImagePath from '../assets/noimage.png';
+
 const ThumbnailCard = props => {
   const { item } = props;
+  const isExternalURL = /^https?:\/\//.test(item.url);
+
   return (
     <div className={styles.itemWrapper}>
-      <Link className={styles.item} to={item.url}>
+      <Link className={styles.item} to={isExternalURL ? null : item.url} href={isExternalURL ? item.url : null}>
         <div
           className={styles.thumbnailImage}
           style={{
-            backgroundImage: `url(${item.thumbnail})`,
+            backgroundImage: `url(${item.thumbnail || NoImagePath})`,
           }}
         />
         {item.published instanceof Date && (

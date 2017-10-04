@@ -14,6 +14,8 @@ const Transition = props => (
       exitActive: styles.fadeExitActive,
     }}
     timeout={{ enter: 250, exit: 0 }}
+    mountOnEnter
+    unmountOnExit
   >
     {props.children}
   </CSSTransition>

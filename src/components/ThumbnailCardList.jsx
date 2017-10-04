@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'found';
 import Icon from 'react-fontawesome';
-import ReactLoading from 'react-loading';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import format from 'date-fns/format';
 import styles from './ThumbnailCardList.css';
