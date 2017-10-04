@@ -67,7 +67,9 @@ function render({ Component, props, match }) {
     </Transition>
   ) : (
     <Transition key="loading">
-      <Loading />
+      <div style={{ flex: '1' }}>
+        <Loading />
+      </div>
     </Transition>
   );
 }

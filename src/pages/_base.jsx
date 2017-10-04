@@ -6,8 +6,7 @@ import styles from './_base.css';
 
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-
-const wrapper = withStyles(styles)(props => <div className={styles.transitionWrapper}>{props.children}</div>);
+import TransitionPageGroup from '../components/TransitionPageGroup';
 
 const Base = props => (
   <div className={styles.base}>
@@ -15,7 +14,7 @@ const Base = props => (
       <Nav />
     </header>
     <main className={styles.main}>
-      <TransitionGroup component={wrapper}>{props.children}</TransitionGroup>
+      <TransitionPageGroup>{props.children}</TransitionPageGroup>
     </main>
     <footer>
       <Footer />

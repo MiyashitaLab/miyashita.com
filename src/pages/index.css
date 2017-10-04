@@ -3,3 +3,19 @@
 .base {
   width: 100%;
 }
+
+.content-wrapper {
+  margin-top: -15px;
+  margin-bottom: 15px;
+
+  @media (--small-viewport) {
+    margin-top: 0;
+  }
+}
+
+.news-loading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
