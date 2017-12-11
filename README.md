@@ -2,4 +2,4 @@
 
 ## Development
 
-See [documentation](./development.md).
+See [documentation](./docs/development.md).
