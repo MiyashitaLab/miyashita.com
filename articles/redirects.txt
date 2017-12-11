@@ -1,3 +1,4 @@
+/  p=:id  /wp/posts/:id  301
 /5thanniversary/  https://event.miyashita.com/anniversary/5th/  301
 /allchi/  https://event.miyashita.com/勉強会/allchi2012/  301
 /homeinteraction/2013/  https://event.miyashita.com/homeinteraction/2013/  301
