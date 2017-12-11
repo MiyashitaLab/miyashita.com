@@ -1,0 +1,19 @@
+---
+layout: member
+title: Chung Baekwoo
+category: 99_OB
+class: 9
+year_of_graduation: 2015
+avatar: https://lh3.googleusercontent.com/vYxfH9jgB2b4ofsGKkmRbzLkNVeCj-ydUaVr3g3xpYb85OZV7tt07_kp_jwoN8mpf949pLU6Id7oevEbpwF8Ntp23JMcJWgyKAB5nte031apP1XQMt6g5xDdXHJ9RjqyDugiG7mJCI9cRZ1BqvchlUFazA-chURnUdticcDMvdSlXqh1Swu9LU467kCfF9BIcfrL96RPaOKilxZyWeQOXiA31qmso3O5pyygc6E3DsDFNogUOxCC0oERAUE0kvEB0YUROvqGcmAZeMhxovl7mBK7EcbasnQGzST6trr74WQoTPP9RCRF203FgpLF8XEF70Wjm1Hh-JGLgj6UDDko5IseB0VpP5ZZmgwgmNCRxjj-n0SSsljK5KItCjkk1mcqK0RengJk13vexWWucXarnfRgS6Ns2ZD0ASKf06thpqhVnjaceEOcroGzZ6g_vIdRyFbqNQ7FIZDsO7HpEwxeKsAxPv8ToIx2zifE_IbxsiK1OqUwQtVwebENFp8gzHETTKZFucd9P-GBCPoqa7vK2rNiGYAywdg8CqMz87KfeAlwIin9RKAlNRsKqo8GUBugVsEUIKijhkeZS6_flkAIwh1vhw5ZWdwsTOgwJlGsYqeJALmfbI4lCDUvHI1ExcZkMIOJq-3ZBDYh1N672X4Qpj5LIEQeUNJfVEgL=p-s300
+---
+**2015年度卒業（9期生）**
+
+興味領域： 音楽・携帯
+
+
+
+趣味： Free Line
+
+
+
+サークル： 韓国人留学生会

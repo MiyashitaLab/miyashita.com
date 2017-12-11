@@ -1,0 +1,129 @@
+prose:
+  rooturl: articles
+  siteurl: https://miyashita.com
+  media: assets
+  ignore:
+    - _config.yml
+    - index.html
+  metadata:
+    articles/members:
+      - name: published
+        field:
+          element: checkbox
+          label: 公開する
+          help: 公開するか下書きにするか
+          value: true
+      - name: layout
+        field:
+          element: hidden
+          value: member
+      - name: title
+        field:
+          element: text
+          label: 氏名
+          placeholder: 氏名
+      - name: avatar
+        field:
+          element: text
+          label: 顔写真 URL
+          placeholder: https://i.gyazo.com/0c50c296ead27df9f04ecca7b8a57eec.jpg
+          type: url
+      - name: category
+        field:
+          element: select
+          label: カテゴリ
+          value: 04_B
+          options:
+            - name: 教員
+              value: 00_教員
+            - name: 研究員
+              value: 01_研究員
+            - name: 博士課程
+              value: 02_D
+            - name: 修士課程
+              value: 03_M
+            - name: 学士課程
+              value: 04_B
+            - name: OB
+              value: 99_OB
+      - name: school_year
+        field:
+          element: number
+          label: 学年
+          help: 学部3年生なら"3"、修士2年生なら"2"
+          placeholder: 1
+      - name: year_of_graduation
+        field:
+          element: number
+          label: 卒業年度
+          help: 西暦で記入する
+          placeholder: e.g. 2017
+      - name: class
+        field:
+          element: number
+          label: 期生
+          placeholder: e.g. 10
+    articles/projects:
+      - name: published
+        field:
+          element: checkbox
+          label: 公開する
+          help: 公開するか下書きにするか
+          value: true
+      - name: layout
+        field:
+          element: hidden
+          value: project
+      - name: title
+        field:
+          element: text
+          label: タイトル
+          placeholder: プロジェクト名
+      - name: visibleOnTopPage
+        field:
+          element: checkbox
+          label: 記事をトップページに表示する
+          help: とくにアピールしたい記事の場合にチェックを付けます
+          value: false
+      - name: thumbnail
+        field:
+          element: text
+          label: サムネイル URL
+          help: トップに表示するときのサムネイル
+      - name: categories
+        field:
+          element: text
+          label: カテゴリ
+          help: https://miyashita.com/projects/categories/ を参考
+          placeholder: Digital Fabrication, Entertainment Computing
+      - name: date
+        field:
+          element: text
+          label: 発表日時
+          value: CURRENT_DATETIME
+    articles/news:
+      - name: published
+        field:
+          element: checkbox
+          label: 公開する
+          help: 公開するか下書きにするか
+          value: true
+      - name: categories
+        field:
+          element: text
+          label: カテゴリ（e.g. 2015年）
+          value: 2017年
+      - name: layout
+        field:
+          element: hidden
+          value: post
+      - name: title
+        field:
+          element: text
+          label: タイトル
+          value:
+      - name: date
+        field:
+          element: text
+          label: イベントの日時
+          value: CURRENT_DATETIME

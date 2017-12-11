@@ -1,0 +1,48 @@
+@import '~/styles/variables.css';
+
+.base {
+  display: block;
+  width: calc(100% / 5);
+  flex: 0 0 auto;
+  padding: 15px;
+
+  @media (--small-viewport) {
+    width: calc(100% / 4);
+    padding: 10px;
+  }
+}
+
+.image {
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.description {
+  padding: 0.5em 0;
+}
+
+.description-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.status {
+  font-size: 0.75rem;
+  padding: 0 0.5em;
+  white-space: nowrap;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  border-bottom: 1px solid var(--gray);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

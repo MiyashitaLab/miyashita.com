@@ -1,0 +1,29 @@
+@import '~/styles/variables.css';
+
+.base {
+  width: 100%;
+}
+
+.content {
+  max-width: var(--maxWidth);
+  padding-top: 0;
+  padding-bottom: 2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  box-sizing: content-box;
+
+  @media (--small-viewport) {
+    margin-top: 0;
+  }
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+
+  @media (--small-viewport) {
+    padding: 0;
+  }
+}

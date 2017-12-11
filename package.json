@@ -1,0 +1,53 @@
+{
+  "name": "miyashita.com",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=\"development\" nuxt",
+    "build": "cross-env NODE_ENV=\"production\" npm-run-all -s build:data build:nuxt",
+    "build:data": "babel-node config/prebuild.js",
+    "build:nuxt": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "hast-to-hyperscript": "^4.0.0",
+    "intersection-observer": "^0.5.0",
+    "mikanjs": "^1.0.10",
+    "nuxt": "^1.0.0-rc11",
+    "supports-webp": "^1.0.5",
+    "tinytime": "^0.2.6",
+    "vue-observe-visibility": "^0.3.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/router": "^1.0.1",
+    "@nuxtjs/workbox": "^2.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cheerio": "^1.0.0-rc.2",
+    "cross-env": "^5.1.1",
+    "csswring": "^6.0.2",
+    "enhanced-resolve": "^4.0.0-beta.2",
+    "fs-extra": "^4.0.3",
+    "glob-promise": "^3.3.0",
+    "hast-util-to-string": "^1.0.1",
+    "lodash-webpack-plugin": "^0.11.4",
+    "lodash.orderby": "^4.6.0",
+    "moment": "^2.19.3",
+    "npm-run-all": "^4.1.2",
+    "path-to-regexp": "^2.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "rehype-raw": "^2.0.0",
+    "remark": "^8.0.0",
+    "remark-frontmatter": "^1.2.0",
+    "remark-inline-links": "^3.0.4",
+    "remark-rehype": "^3.0.0",
+    "unist-util-remove-position": "^1.1.1",
+    "unist-util-visit": "^1.2.0",
+    "webpack-bundle-analyzer": "^2.9.1",
+    "xregexp": "^3.2.0"
+  }
+}

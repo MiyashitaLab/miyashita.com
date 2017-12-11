@@ -1,0 +1,23 @@
+@import '~/styles/variables.css';
+
+.base {
+  width: 100%;
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 2rem;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 1rem;
+}
+
+.news-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

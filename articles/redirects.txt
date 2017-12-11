@@ -1,0 +1,12 @@
+/5thanniversary/  https://event.miyashita.com/anniversary/5th/  301
+/allchi/  https://event.miyashita.com/勉強会/allchi2012/  301
+/homeinteraction/2013/  https://event.miyashita.com/homeinteraction/2013/  301
+/homeinteraction/2014/  https://event.miyashita.com/homeinteraction/2014/  301
+/homeinteraction/2015/  https://event.miyashita.com/homeinteraction/2015/  301
+/uist2015j/  https://event.miyashita.com/勉強会/UIST2015/  301
+/daishinchoku/2013/  https://event.miyashita.com/大進捗/2013/  301
+/hoga/2012/  https://event.miyashita.com/萌芽/2012/  301
+/hoga/2013/  https://event.miyashita.com/萌芽/2013/  301
+/hoga/2014/  https://event.miyashita.com/萌芽/2014/  301
+/hoga/2015/  https://event.miyashita.com/萌芽/2015/  301
+/hoga/2016/  https://event.miyashita.com/萌芽/2016/  301

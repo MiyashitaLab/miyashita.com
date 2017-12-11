@@ -1,0 +1,65 @@
+@import '~/styles/variables.css';
+
+.base {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-button {
+  display: flex;
+  width: 50px;
+  font-size: 2em;
+  cursor: pointer;
+  flex: 0 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  transition: color 0.125s ease;
+
+  &:hover {
+    color: color(var(--black) alpha(0.5));
+  }
+
+  @media (--small-viewport) {
+    display: none;
+  }
+}
+
+.scroll-button-disabled {
+  color: color(var(--black) alpha(0.125));
+}
+
+.outer {
+  flex: 1 1 auto;
+  overflow: hidden;
+
+  @media (--small-viewport) {
+    margin: 0 -15px;
+    width: auto;
+    overflow-x: auto;
+  }
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: visible;
+  transition: transform ease 0.25s;
+
+  @media (--small-viewport) {
+    padding: 0 15px;
+
+    &::after {
+      content: '';
+      width: 15px;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.inner-wrap {
+  flex-wrap: wrap;
+}

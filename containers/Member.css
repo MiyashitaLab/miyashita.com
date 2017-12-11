@@ -1,0 +1,35 @@
+@import '~/styles/variables.css';
+
+.base {
+  display: flex;
+  width: 100%;
+  max-width: var(--maxWidth);
+  min-height: 100%;
+  margin: 0 auto;
+
+  @media (--small-viewport) {
+    flex-direction: column;
+  }
+}
+
+.image-wrapper {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1rem;
+  flex: 1 1 auto;
+
+  & h1 {
+    margin: 0;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.25;
+    border-bottom: 1px solid var(--lightGray);
+  }
+}

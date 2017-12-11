@@ -1,0 +1,97 @@
+@import '~/styles/variables.css';
+
+.image-wrapper {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: var(--maxWidth);
+  height: 100%;
+  line-height: 0;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.bg-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+
+  background: linear-gradient(
+    to left,
+    color(var(--cyan) saturation(-50%)),
+    color(var(--cyan) saturation(+50%))
+  );
+}
+
+.bg-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(5px);
+}
+
+.header {
+  position: relative;
+  height: 33vh;
+  max-height: 320px;
+  overflow: hidden;
+
+  @media (--small-viewport) {
+    height: 25vh;
+  }
+}
+
+.header-wrapper {
+  height: 100%;
+}
+
+.header-blur {
+  filter: blur(3px);
+}
+
+.header-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    color(var(--white) alpha(0.25)) 0%,
+    color(var(--white) alpha(0.9)) 75%,
+    color(var(--white) alpha(0.95)) 100%
+  );
+}
+
+.title-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.title {
+  max-width: var(--maxWidth);
+  margin: auto;
+  line-height: 1.25;
+  padding: 0 15px;
+}
+
+.border {
+  border-bottom: 1px solid var(--gray);
+}

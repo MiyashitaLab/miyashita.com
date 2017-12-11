@@ -1,0 +1,55 @@
+@import '~/styles/variables.css';
+
+.header {
+  position: relative;
+  width: 100%;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  background-color: transparent;
+  color: var(--white);
+  text-align: center;
+}
+
+.image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--cyan);
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: color(var(--black) alpha(0.75));
+  }
+}
+
+.text-wrapper {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(5px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.date {
+  padding: 0.5em 0;
+}
