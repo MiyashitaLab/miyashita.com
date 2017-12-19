@@ -57,7 +57,7 @@ module.exports = {
         method: 'GET',
         options: {
           cacheExpiration: {
-            maxAgeSeconds: 5 * 60,
+            maxAgeSeconds: 60,
           },
         },
       },
