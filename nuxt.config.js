@@ -28,6 +28,16 @@ module.exports = {
     extend: webpack.extend,
     plugins: webpack.plugins,
   },
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type);
+      },
+      shouldPrefetch: (file, type) => {
+        return ['script', 'style', 'font'].includes(type);
+      },
+    },
+  },
   generate: {
     routes,
     minify: {
@@ -42,14 +52,34 @@ module.exports = {
     dev: isDev, // Enable PWA when developing
     runtimeCaching: [
       {
+        urlPattern: '/_data/.*',
+        handler: 'cacheFirst',
+        method: 'GET',
+        options: {
+          cacheExpiration: {
+            maxAgeSeconds: 5 * 60,
+          },
+        },
+      },
+      {
         urlPattern: 'https://.*\\.googleusercontent\\.com/.*',
         handler: 'cacheFirst',
         method: 'GET',
+        options: {
+          cacheExpiration: {
+            maxAgeSeconds: 24 * 60 * 60,
+          },
+        },
       },
       {
         urlPattern: 'https://.*\\.youtube\\.com/.*',
         handler: 'cacheFirst',
         method: 'GET',
+        options: {
+          cacheExpiration: {
+            maxAgeSeconds: 24 * 60 * 60,
+          },
+        },
       },
     ],
   },
