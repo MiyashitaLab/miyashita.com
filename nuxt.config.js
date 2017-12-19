@@ -52,16 +52,6 @@ module.exports = {
     dev: isDev, // Enable PWA when developing
     runtimeCaching: [
       {
-        urlPattern: '/_data/.*',
-        handler: 'cacheFirst',
-        method: 'GET',
-        options: {
-          cacheExpiration: {
-            maxAgeSeconds: 60,
-          },
-        },
-      },
-      {
         urlPattern: 'https://.*\\.googleusercontent\\.com/.*',
         handler: 'cacheFirst',
         method: 'GET',
