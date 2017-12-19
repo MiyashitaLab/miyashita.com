@@ -1,8 +1,9 @@
 import url from 'url';
+import encodeUrl from 'encodeurl';
 
 export default function generateHead() {
   const title = this.page.title ? `${this.page.title} | ${process.env.siteTitle}` : process.env.siteTitle;
-  const href = url.format(url.parse(url.resolve(process.env.baseUrl, this.$route.path)));
+  const href = encodeUrl(url.resolve(process.env.baseUrl, this.$route.path));
   return {
     title: title,
     meta: [

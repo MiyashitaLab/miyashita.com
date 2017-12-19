@@ -14,6 +14,7 @@
 
 <script>
 import url from 'url';
+import encodeUrl from 'encodeurl';
 import SocialButton from './SocialButton';
 
 export default {
@@ -25,7 +26,7 @@ export default {
   },
   computed: {
     pageUrl() {
-      return url.format(url.parse(url.resolve(process.env.baseUrl, this.$route.path)));
+      return encodeUrl(url.resolve(process.env.baseUrl, this.$route.path));
     },
     pageTitle() {
       return `${this.title} | ${process.env.siteTitle}`;
