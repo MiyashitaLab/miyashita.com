@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import url from 'url';
 import path from 'path';
 import cheerio from 'cheerio';
+import encodeUrl from 'encodeurl';
 import getRoutes from './getRoutes';
 
 async function generateJSON(routes) {
@@ -69,7 +70,7 @@ async function generateRedirects(currentRoutes) {
           prevSitemap.splice(prevSitemap.indexOf(prevPathname), 1);
         }
       }
-      redirects.push(`/wp/posts/${info.page._id}  ${route.path}  301`);
+      redirects.push(`/wp/posts/${info.page._id}/  ${route.path}  301`);
     }
     if (prevSitemap.indexOf(route.path) !== -1) {
       prevSitemap.splice(prevSitemap.indexOf(route.path), 1);
@@ -77,7 +78,16 @@ async function generateRedirects(currentRoutes) {
   }
 
   const staticRedirects = await fs.readFile(path.resolve(__dirname, '../articles/redirects.txt'), 'utf8');
-  const redirectsText = `${staticRedirects}\n${redirects.join('\n')}`;
+  const redirectsText = `${staticRedirects}\n${redirects.join('\n')}`
+    .split('\n')
+    .map(line => {
+      // To percentage-encode for non-ascii URL
+      const args = line.split(/\s+/);
+      args[0] = encodeUrl(args[0]);
+      args[args.length - 2] = encodeUrl(args[args.length - 2]);
+      return args.join('\x20\x20');
+    })
+    .join('\n');
   await fs.writeFile(path.resolve(__dirname, '../static/_redirects'), redirectsText, 'utf8');
 
   console.error(prevSitemap.join('\n'));

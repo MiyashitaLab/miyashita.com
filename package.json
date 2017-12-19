@@ -29,6 +29,7 @@
     "cheerio": "^1.0.0-rc.2",
     "cross-env": "^5.1.1",
     "csswring": "^6.0.2",
+    "encodeurl": "^1.0.1",
     "enhanced-resolve": "^4.0.0-beta.2",
     "fs-extra": "^4.0.3",
     "glob-promise": "^3.3.0",
