@@ -70,7 +70,7 @@ async function generateRedirects(currentRoutes) {
           prevSitemap.splice(prevSitemap.indexOf(prevPathname), 1);
         }
       }
-      redirects.push(`/  p=${info.page._id}  ${route.path}  301!`);
+      redirects.push(`/wp/posts/${info.page._id}  ${route.path}  301!`);
     }
     if (prevSitemap.indexOf(route.path) !== -1) {
       prevSitemap.splice(prevSitemap.indexOf(route.path), 1);
