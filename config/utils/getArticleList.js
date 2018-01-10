@@ -31,6 +31,7 @@ async function getArticleList(globStr, defaultValues = {}) {
         ),
       };
     })
+    .filter(info => info.published !== false)
     .sort((a, b) => b.date - a.date);
   return results;
 }
