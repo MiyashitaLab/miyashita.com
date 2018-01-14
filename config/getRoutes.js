@@ -91,7 +91,7 @@ async function getRoutes() {
           title: '',
           description:
             '明治大学 総合数理学部 先端メディアサイエンス学科 / 明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 宮下研究室',
-          news: newsList.slice(0, 10).map(i => ({ ...i, content: undefined, filePath: undefined })),
+          news: newsList.slice(0, 9).map(i => ({ ...i, content: undefined, filePath: undefined })),
           projects: projectList
             .filter(i => i.visibleOnTopPage)
             .map(i => ({ ...i, date: undefined, content: undefined, filePath: undefined })),
@@ -99,7 +99,7 @@ async function getRoutes() {
         },
       }),
     },
-    ...makePageRoutes(newsList.map(i => ({ ...i, content: undefined, filePath: undefined })), 10, {
+    ...makePageRoutes(newsList.map(i => ({ ...i, content: undefined, filePath: undefined })), 30, {
       path: '/news/',
       component: '~/containers/NewsList',
       getProps: () => ({
