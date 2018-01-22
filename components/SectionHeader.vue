@@ -1,7 +1,7 @@
 <style src="./SectionHeader.css" lang="postcss" module></style>
 
 <template>
-  <header>
+  <header :class="$style.base">
     <h2 :class="$style.header">
       <span :class="$style.headerInner">
         <slot />

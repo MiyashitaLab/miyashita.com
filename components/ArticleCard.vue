@@ -1,10 +1,7 @@
 <style src="./ArticleCard.css" lang="postcss" module></style>
 
 <template>
-  <div :class="{
-    [$style.itemWrapper]: true,
-    [$style.wide]: wide,
-  }">
+  <ItemCard :wide="wide">
     <Link :class="$style.item" :href="item.permalink">
       <div :class="$style.thumbnailImageWrapper">
         <OptimizedImage :class="$style.thumbnailImage" :src="item.thumbnail || noImage" width="350" />
@@ -22,11 +19,12 @@
         <span>続きを読む</span>
       </small>
     </Link>
-  </div>
+  </ItemCard>
 </template>
 
 <script>
 import tinytime from 'tinytime';
+import ItemCard from './ItemCard';
 
 const dateTemplate = tinytime('{YYYY}/{Mo}/{DD}', {
   padMonth: true,
@@ -55,6 +53,9 @@ export default {
     dateText() {
       return this.date && dateTemplate.render(this.date);
     },
+  },
+  components: {
+    ItemCard,
   },
 };
 </script>

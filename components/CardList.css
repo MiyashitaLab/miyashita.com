@@ -45,12 +45,13 @@
 .inner {
   position: relative;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: visible;
   transition: transform ease 0.25s;
 
   @media (--small-viewport) {
     padding: 0 15px;
+    flex-wrap: nowrap;
 
     &::after {
       content: '';

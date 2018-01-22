@@ -1,5 +1,13 @@
 @import '~/styles/variables.css';
 
+.base {
+  padding-top: 1rem;
+
+  @media (--small-viewport) {
+    padding-top: 0.5rem;
+  }
+}
+
 .header {
   position: relative;
   text-align: center;

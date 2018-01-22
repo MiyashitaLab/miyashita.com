@@ -145,6 +145,9 @@ p {
 .fa-th:before {
   content: '\f00a';
 }
+.fa-arrow-right:before {
+  content: '\f061';
+}
 .fa-external-link:before {
   content: '\f08e';
 }

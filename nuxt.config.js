@@ -71,6 +71,16 @@ module.exports = {
           },
         },
       },
+      {
+        urlPattern: 'https://research\\.miyashita\\.com/.*/thumb.jpg',
+        handler: 'cacheFirst',
+        method: 'GET',
+        options: {
+          cacheExpiration: {
+            maxAgeSeconds: 24 * 60 * 60,
+          },
+        },
+      },
     ],
   },
   plugins: ['~/plugins/index.js', { src: '~/plugins/client.js', ssr: false }],

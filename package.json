@@ -4,7 +4,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=\"development\" nuxt",
+    "start": "cross-env NODE_ENV=\"development\" npm-run-all -s build:pre start:main",
+    "start:main": "nuxt",
     "build": "cross-env NODE_ENV=\"production\" npm-run-all -s build:pre build:main build:post",
     "build:pre": "babel-node config/prebuild.js",
     "build:main": "nuxt generate",
