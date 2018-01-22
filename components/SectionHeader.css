@@ -11,10 +11,11 @@
 .header {
   position: relative;
   text-align: center;
-  padding-top: 0.5rem;
+  font-size: 1.75rem;
   padding-bottom: 1rem;
 
   @media (--small-viewport) {
+    font-size: 1.5rem;
     padding-bottom: 0.5rem;
   }
 }

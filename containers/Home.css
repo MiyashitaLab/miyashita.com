@@ -18,6 +18,16 @@
   }
 }
 
+.hr {
+  margin-top: 1.5rem;
+  border: 0;
+  border-top: 5px double color(var(--gray) alpha(0.25));
+
+  @media (--small-viewport) {
+    margin-top: 0.5rem;
+  }
+}
+
 .member-list {
   display: flex;
   flex-wrap: wrap;

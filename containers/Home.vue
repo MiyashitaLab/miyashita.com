@@ -17,6 +17,8 @@
         </CardList>
       </section>
 
+      <hr :class="$style.hr" />
+
       <section>
         <SectionHeader href="https://research.miyashita.com">
           <FontAwesome name="graduation-cap" />
@@ -33,6 +35,8 @@
         </CardList>
       </section>
 
+      <hr :class="$style.hr" />
+
       <section>
         <SectionHeader href="/projects/">
           <FontAwesome name="th" />
@@ -45,6 +49,8 @@
           <ReadmoreCard href="/projects/" />
         </CardList>
       </section>
+
+      <hr :class="$style.hr" />
 
       <section>
         <SectionHeader href="/members/">
