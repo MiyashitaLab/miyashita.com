@@ -27,7 +27,7 @@ export default {
       if (/^[a-z][a-z0-9+.-]*:/.test(this.href)) {
         return false;
       }
-      fetchData({ isServer: false, route: { path: this.href } })
+      fetchData({ route: { path: this.href } })
         .catch(err => {
           console.error(err);
           return Promise.resolve;
