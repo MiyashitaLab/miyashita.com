@@ -1,6 +1,6 @@
 prose:
   rooturl: articles
-  siteurl: https://miyashita.com
+  siteurl: 'https://miyashita.com'
   media: assets
   ignore:
     - _config.yml
@@ -26,7 +26,7 @@ prose:
         field:
           element: text
           label: 顔写真 URL
-          placeholder: https://i.gyazo.com/0c50c296ead27df9f04ecca7b8a57eec.jpg
+          placeholder: 'https://i.gyazo.com/0c50c296ead27df9f04ecca7b8a57eec.jpg'
           type: url
       - name: category
         field:
@@ -94,8 +94,8 @@ prose:
         field:
           element: text
           label: カテゴリ
-          help: https://miyashita.com/projects/categories/ を参考
-          placeholder: Digital Fabrication, Entertainment Computing
+          help: 'https://miyashita.com/projects/categories/ を参考'
+          placeholder: 'Digital Fabrication, Entertainment Computing'
       - name: date
         field:
           element: text
@@ -108,6 +108,11 @@ prose:
           label: 公開する
           help: 公開するか下書きにするか
           value: true
+      - name: thumbnail
+        field:
+          element: text
+          label: サムネイル URL
+          help: トップに表示するときのサムネイル
       - name: categories
         field:
           element: text
@@ -121,7 +126,7 @@ prose:
         field:
           element: text
           label: タイトル
-          value:
+          value: null
       - name: date
         field:
           element: text
