@@ -5,8 +5,7 @@
   "version": "0.0.0",
   "scripts": {
     "start:react-static": "cross-env NODE_ENV=\"development\" react-static start -p 3000",
-    "start:cms":
-      "cross-env NODE_ENV=\"development\" webpack-dev-server --config config/cms/webpack.config.js",
+    "start:cms": "cross-env NODE_ENV=\"development\" webpack-dev-server --config config/cms/webpack.config.js",
     "prebuild": "babel-node ./config/prebuild.js",
     "build": "cross-env NODE_ENV=\"production\" npm-run-all build:cms build:react-static",
     "build:react-static": "react-static build --staging",
@@ -49,6 +48,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cheerio": "^1.0.0-rc.2",
+    "concat-map": "^0.0.1",
     "copy-webpack-plugin": "^4.3.1",
     "cpx": "^1.5.0",
     "cross-env": "^5.1.3",
