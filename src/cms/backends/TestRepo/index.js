@@ -2,7 +2,11 @@ import libpath from 'path';
 import { attempt, isError } from 'lodash';
 import uuid from 'uuid/v4';
 import AuthenticationPage from './AuthenticationPage';
-const repoFiles = require('../repoFiles.json');
+
+let repoFiles = {};
+if (process.env.NODE_ENV !== 'production') {
+  repoFiles = require('../repoFiles.json');
+}
 
 function fileExtension(filepath) {
   return libpath.extname(libpath.basename(filepath)).slice(1);

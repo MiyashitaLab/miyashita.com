@@ -1,6 +1,8 @@
 import libpath from 'path';
 import pkgDir from 'pkg-dir';
+import webpack from 'webpack';
 import LodashModuleReplacementPlugin from 'lodash-webpack-plugin';
+import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import { GenerateSW } from 'workbox-webpack-plugin';
 
 const rootDir = pkgDir.sync(__dirname);
@@ -40,6 +42,7 @@ const webpackConfigs = [
 
     const pluginsForProduction = [
       new LodashModuleReplacementPlugin(),
+      new UglifyJsPlugin(),
       new GenerateSW({
         cacheId: 'miyashita.com',
         directoryIndex: '/',
@@ -113,7 +116,11 @@ const webpackConfigs = [
           },
         ],
       },
-      plugins: [...config.plugins, ...(isProd ? pluginsForProduction : [])],
+      plugins: [
+        ...config.plugins,
+        new webpack.EnvironmentPlugin(['NODE_ENV']),
+        ...(isProd ? pluginsForProduction : []),
+      ],
     });
 
     return config;
