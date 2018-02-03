@@ -7,6 +7,7 @@ const Document = ({ Html, Head, Body, children, renderMeta }) => (
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <style data-ssr dangerouslySetInnerHTML={{ __html: renderMeta.styles }} />
+      <script async src="https://www.googletagmanager.com/gtag/js" />
     </Head>
     <Body>{children}</Body>
   </Html>

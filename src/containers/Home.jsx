@@ -3,6 +3,7 @@ import { withRouteData } from 'react-static';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 import styles from './Home.css';
+import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
 import HomeHeader from '~/components/HomeHeader';
 import FontAwesome from '~/components/FontAwesome';
@@ -72,4 +73,4 @@ const Home = ({ page }) => (
   </div>
 );
 
-export default withMetadata(withRouteData(withStyles(styles)(Home)));
+export default withTracker(withMetadata(withRouteData(withStyles(styles)(Home))));

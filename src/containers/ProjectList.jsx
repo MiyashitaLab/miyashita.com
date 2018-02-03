@@ -3,6 +3,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { withRouteData } from 'react-static';
 
 import styles from './ProjectList.css';
+import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
 import ArticleHeader from '~/components/ArticleHeader';
 import ArticleCard from '~/components/ArticleCard';
@@ -54,4 +55,4 @@ const ProjectList = ({ page }) => {
   );
 };
 
-export default withMetadata(withRouteData(withStyles(styles)(ProjectList)));
+export default withTracker(withMetadata(withRouteData(withStyles(styles)(ProjectList))));

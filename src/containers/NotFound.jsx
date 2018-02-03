@@ -2,6 +2,7 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 import styles from './NotFound.css';
+import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
 import Link from '~/components/Link';
 import FontAwesome from '~/components/FontAwesome';
@@ -23,4 +24,4 @@ const NotFound = () => (
   </div>
 );
 
-export default withMetadata(withStyles(styles)(NotFound));
+export default withTracker(withMetadata(withStyles(styles)(NotFound)));

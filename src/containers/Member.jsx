@@ -3,6 +3,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { withRouteData } from 'react-static';
 
 import styles from './Member.css';
+import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
 import FaceImage from '~/components/FaceImage';
 import SocialButtonList from '~/components/SocialButtonList';
@@ -24,4 +25,4 @@ const Member = ({ page }) => (
 const MemberWithStyles = withStyles(styles)(Member);
 
 export { MemberWithStyles as Member };
-export default withMetadata(withRouteData(MemberWithStyles));
+export default withTracker(withMetadata(withRouteData(MemberWithStyles)));

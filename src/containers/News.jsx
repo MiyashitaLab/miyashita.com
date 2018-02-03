@@ -3,6 +3,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { withRouteData } from 'react-static';
 
 import styles from './News.css';
+import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
 import NewsHeader from '~/components/NewsHeader';
 import SocialButtonList from '~/components/SocialButtonList';
@@ -25,4 +26,4 @@ const News = ({ page }) => {
 const NewsWithStyles = withStyles(styles)(News);
 
 export { NewsWithStyles as News };
-export default withMetadata(withRouteData(NewsWithStyles));
+export default withTracker(withMetadata(withRouteData(NewsWithStyles)));

@@ -3,6 +3,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { withRouteData } from 'react-static';
 
 import styles from './Article.css';
+import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
 import ArticleHeader from '~/components/ArticleHeader';
 import SocialButtonList from '~/components/SocialButtonList';
@@ -21,4 +22,4 @@ const Article = ({ page }) => (
 const ArticleWithStyles = withStyles(styles)(Article);
 
 export { ArticleWithStyles as Article };
-export default withMetadata(withRouteData(ArticleWithStyles));
+export default withTracker(withMetadata(withRouteData(ArticleWithStyles)));

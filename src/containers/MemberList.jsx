@@ -3,6 +3,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { withRouteData } from 'react-static';
 
 import styles from './MemberList.css';
+import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
 import ArticleHeader from '~/components/ArticleHeader';
 import SectionHeader from '~/components/SectionHeader';
@@ -32,4 +33,4 @@ const MemberList = ({ page }) => (
   </div>
 );
 
-export default withMetadata(withRouteData(withStyles(styles)(MemberList)));
+export default withTracker(withMetadata(withRouteData(withStyles(styles)(MemberList))));
