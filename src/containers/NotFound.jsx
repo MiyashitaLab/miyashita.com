@@ -14,7 +14,7 @@ const NotFound = () => (
         <h1>404 | Not Found</h1>
         <p>この URL は存在していません．</p>
         <p>
-          <Link className={styles.link} to="/">
+          <Link className={styles.link} href="/">
             <FontAwesome name="angle-left" />
             ページトップに戻る
           </Link>
