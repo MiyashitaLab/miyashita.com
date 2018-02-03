@@ -1,0 +1,60 @@
+@import '~/styles/variables.css';
+
+.base {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.wrapper {
+  display: inline-flex;
+  max-width: 100%;
+  justify-content: center;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  box-shadow: 0 2px 5px 0 color(var(--black) alpha(0.25));
+}
+
+.link-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  flex: 0 1 auto;
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 0 1 auto;
+  height: 2em;
+}
+
+.enabled {
+  color: var(--cyan);
+  background-color: transparent;
+
+  &:hover {
+    color: var(--white);
+    background-color: color(var(--cyan) alpha(0.75));
+  }
+}
+
+.disabled {
+  color: color(var(--black) alpha(0.25));
+
+  &:hover {
+    color: color(var(--black) alpha(0.25));
+  }
+}
+
+.current {
+  background-color: var(--cyan);
+  color: var(--white);
+
+  &:hover {
+    color: var(--white);
+  }
+}

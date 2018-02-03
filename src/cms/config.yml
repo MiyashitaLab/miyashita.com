@@ -1,0 +1,116 @@
+backend:
+  name: "<%= process.env.NODE_ENV !== 'production' ? 'test-dev-repo' : 'github' %>"
+  repo: MiyashitaLab/miyashita.com
+display_url: 'https://miyashita.com'
+media_folder: public/files
+public_folder: files
+collections:
+  - name: news
+    label: ニュース
+    folder: articles/news
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    fields:
+      - label: 公開・非公開
+        name: published
+        widget: select
+        default: true
+        options:
+          - label: 公開する
+            value: true
+          - label: 下書きにする
+            value: false
+      - label: タイトル
+        name: title
+        widget: string
+      - label: 日付
+        name: date
+        widget: date
+        format: YYYY-MM-DD
+      - label: サムネイル URL
+        name: thumbnail
+        widget: image
+        required: false
+      - label: 本文
+        name: body
+        widget: markdown
+  - name: members
+    label: メンバー
+    folder: articles/members
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - label: 公開・非公開
+        name: published
+        widget: select
+        default: true
+        options:
+          - label: 公開する
+            value: true
+          - label: 下書きにする
+            value: false
+      - label: 氏名
+        name: title
+        widget: string
+      - label: 顔写真 URL
+        name: avatar
+        widget: image
+      - label: カテゴリ
+        name: category
+        widget: select
+        default: 04_B
+        options:
+          - label: 教員
+            value: 00_教員
+          - label: 研究員
+            value: 01_研究員
+          - label: 博士課程
+            value: 02_D
+          - label: 修士課程
+            value: 03_M
+          - label: 学士課程
+            value: 04_B
+          - label: OB
+            value: 99_OB
+      - label: 学年 | 学部3年なら"3"、修士2年なら"2"
+        name: school_year
+        widget: number
+      - label: 卒業年度 | 西暦で記入する
+        name: year_of_graduation
+        widget: number
+        required: false
+      - label: 期生
+        name: class
+        widget: number
+        required: false
+      - label: 本文
+        name: body
+        widget: markdown
+  - name: articles
+    label: その他
+    folder: articles/articles
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - label: 公開・非公開
+        name: published
+        widget: select
+        default: true
+        options:
+          - label: 公開する
+            value: true
+          - label: 下書きにする
+            value: false
+      - label: タイトル
+        name: title
+        widget: string
+      - label: 記事の公開パス
+        name: permalink
+        widget: string
+      - label: サムネイル URL
+        name: thumbnail
+        widget: image
+        required: false
+      - label: 本文
+        name: body
+        widget: markdown

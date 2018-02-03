@@ -1,0 +1,16 @@
+/* Fade */
+.page-enter {
+  opacity: 0;
+}
+.page-enter-to {
+  transition: opacity 0.4s ease;
+  opacity: 1 !important;
+}
+
+.page-leave {
+  opacity: 1;
+}
+.page-leave-to {
+  transition: opacity 0.4s ease;
+  opacity: 0 !important;
+}

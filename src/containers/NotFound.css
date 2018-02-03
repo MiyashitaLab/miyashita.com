@@ -1,0 +1,28 @@
+@import '~/styles/variables.css';
+
+.base {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  display: block;
+  flex: 1 1 75vw;
+  max-width: 75vw;
+  padding: 5rem 3rem;
+  background-color: var(--lightGray);
+
+  @media (--small-viewport) {
+    padding: 3rem 1rem;
+  }
+}
+
+.link {
+  color: var(--cyan);
+  border-bottom: 1px solid;
+}

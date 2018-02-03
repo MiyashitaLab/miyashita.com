@@ -1,0 +1,75 @@
+@import '~/styles/variables.css';
+
+.markdown-body {
+  font-family: var(--fontFamily);
+  line-height: 1.5;
+  word-wrap: break-word;
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+
+    @media (--small-viewport) {
+      margin-top: 0.25rem;
+      margin-bottom: 0;
+    }
+  }
+
+  & a {
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+
+    &[href^='http:']:after,
+    &[href^='https:']:after {
+      font-family: 'FontAwesome' !important;
+      content: '\f08e';
+      font-size: 0.5em;
+      display: inline-block;
+      position: relative;
+      top: -0.5em;
+      padding: 0 0.25em;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  & p {
+    padding: 0.5rem 0;
+    & img {
+      display: block;
+      width: 500px;
+      max-width: 100%;
+      margin: auto;
+      &[style] {
+        display: inline-block;
+        width: initial;
+        margin: initial;
+      }
+    }
+  }
+
+  & hr {
+    margin: 0.5rem 0;
+    border-top: 3px double var(--gray);
+  }
+
+  & ul,
+  & ol {
+    padding: 0.25rem;
+    padding-left: 2rem;
+  }
+
+  & li {
+    padding: 0.25rem;
+    & > p {
+      padding: 0;
+    }
+  }
+}

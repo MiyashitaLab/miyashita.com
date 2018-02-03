@@ -1,0 +1,25 @@
+@import '~/styles/variables.css';
+
+.base {
+  position: relative;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px 0 color(var(--black) alpha(0.25));
+  overflow: hidden;
+  background-color: var(--gray);
+}
+
+.image-padding {
+  padding-top: 100%;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate3d(-50%, 0, 0);
+}
