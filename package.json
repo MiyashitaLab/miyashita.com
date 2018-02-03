@@ -21,7 +21,6 @@
     "intersection-observer": "^0.5.0",
     "lodash.noop": "^3.0.1",
     "mikanjs": "^1.0.10",
-    "netlify-cms": "github:netlify/netlify-cms#^1.1.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
