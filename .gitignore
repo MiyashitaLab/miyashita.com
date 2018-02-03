@@ -129,6 +129,3 @@ $RECYCLE.BIN/
 /public/_redirects
 /public/sw.js
 /src/cms/backends/repoFiles.json
-
-# For multi-os support
-/yarn.lock
