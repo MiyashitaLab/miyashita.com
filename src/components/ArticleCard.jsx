@@ -60,8 +60,8 @@ class ArticleCard extends React.Component {
             <strong>{item.title}</strong>
           </p>
           <small className={styles.readmore}>
+            <span>詳細</span>
             <FontAwesome name="angle-right" />
-            <span>続きを読む</span>
           </small>
         </Link>
       </ItemCard>

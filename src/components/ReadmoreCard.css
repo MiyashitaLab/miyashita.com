@@ -18,7 +18,7 @@
 
 .icon-circle {
   display: inline-block;
-  background-color: var(--black);
+  background-color: color(var(--black) alpha(0.95));
   color: var(--white);
   font-size: 1.5rem;
   width: 4rem;

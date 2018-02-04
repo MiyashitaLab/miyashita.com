@@ -12,11 +12,6 @@ const ReadmoreCard = ({ wide, href }) => (
       <div>
         <FontAwesome className={styles.iconCircle} name="arrow-right" />
       </div>
-      <div className={styles.textWrapper}>
-        <span className={styles.text}>
-          <strong>もっと見る</strong>
-        </span>
-      </div>
     </Link>
   </ItemCard>
 );
