@@ -52,16 +52,16 @@
 .read-more {
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
-  background: var(--white);
-  border: 1px solid var(--cyan);
-  color: var(--cyan);
+  color: var(--white);
+  background: color(var(--cyan) alpha(0.95));
+  border: 1px solid color(var(--cyan) alpha(0.95));
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 0.125s ease;
 
   &:hover {
-    color: var(--white);
-    background: var(--cyan);
+    color: var(--cyan);
+    background: var(--white);
   }
 
   @media (--small-viewport) {
