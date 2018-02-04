@@ -13,6 +13,7 @@ import ArticleCard from '~/components/ArticleCard';
 import MemberCard from '~/components/MemberCard';
 import ReadmoreCard from '~/components/ReadmoreCard';
 import SearchInput from '~/components/SearchInput';
+import Link from '~/components/Link';
 
 const Home = ({ page }) => (
   <div className={styles.base}>
@@ -65,6 +66,12 @@ const Home = ({ page }) => (
           <FontAwesome name="group" />
           <span>メンバー</span>
         </SectionHeader>
+        <p className={styles.readMoreWrapper}>
+          <Link className={styles.readMore} href="/members/">
+            <span>歴代の宮下研メンバーはこちら</span>
+            <FontAwesome name="angle-right" />
+          </Link>
+        </p>
         <div className={styles.memberList}>
           {page.members.map(member => <MemberCard key={member.title} info={member} />)}
         </div>

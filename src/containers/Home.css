@@ -42,3 +42,29 @@
   padding-top: 0.5em;
   padding-bottom: 1.5em;
 }
+
+.read-more-wrapper {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.read-more {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.125s ease;
+
+  &:hover {
+    color: var(--white);
+    background: var(--cyan);
+  }
+
+  @media (--small-viewport) {
+    font-size: 0.5rem;
+  }
+}

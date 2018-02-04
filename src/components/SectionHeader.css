@@ -48,22 +48,3 @@
     }
   }
 }
-
-.more-link {
-  position: absolute;
-  bottom: 1rem;
-  margin: 0 1rem;
-  font-size: 0.75rem;
-  color: var(--cyan);
-  cursor: pointer;
-  transition: color 0.125s ease;
-
-  &:hover {
-    color: color(var(--cyan) alpha(0.5));
-  }
-
-  @media (--small-viewport) {
-    bottom: 0.5rem;
-    font-size: 0.5rem;
-  }
-}
