@@ -20,6 +20,15 @@
   }
 }
 
+.link {
+  color: var(--black);
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: color(var(--black) alpha(0.5));
+  }
+}
+
 .header-inner {
   display: inline-block;
   position: relative;

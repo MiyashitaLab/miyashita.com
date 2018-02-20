@@ -20,7 +20,7 @@ const Home = ({ page }) => (
     <HomeHeader />
     <div className={styles.content}>
       <section>
-        <SectionHeader>
+        <SectionHeader href="/news/">
           <FontAwesome name="newspaper-o" />
           <span>ニュース</span>
         </SectionHeader>
