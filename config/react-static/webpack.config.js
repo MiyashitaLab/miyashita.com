@@ -15,22 +15,41 @@ const webpackConfigs = [
     const isProd = stage === 'prod';
     const isNode = stage === 'node';
 
-    const cssLoader = {
-      test: /\.css$/,
-      use: [
-        'isomorphic-style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            modules: true,
-            camelCase: true,
-            importLoaders: 1,
-            localIdentName: '[name]__[local]--[hash:base64:5]',
+    const cssLoaders = [
+      {
+        test: /\.css$/,
+        exclude: [/node_modules/],
+        use: [
+          'isomorphic-style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              camelCase: true,
+              importLoaders: 1,
+              localIdentName: '[name]__[local]--[hash:base64:5]',
+            },
           },
-        },
-        'postcss-loader',
-      ],
-    };
+          'postcss-loader',
+        ],
+      },
+      {
+        test: /\.css$/,
+        include: [/node_modules/],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: false,
+              camelCase: false,
+              importLoaders: 1,
+            },
+          },
+          'postcss-loader',
+        ],
+      },
+    ];
 
     const fileLoader = {
       loader: 'file-loader',
@@ -112,7 +131,7 @@ const webpackConfigs = [
         ...config.module,
         rules: [
           {
-            oneOf: [jsLoader, cssLoader, fileLoader],
+            oneOf: [jsLoader, ...cssLoaders, fileLoader],
           },
         ],
       },
