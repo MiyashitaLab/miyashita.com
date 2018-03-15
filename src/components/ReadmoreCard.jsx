@@ -8,7 +8,7 @@ import FontAwesome from '~/components/FontAwesome';
 
 const ReadmoreCard = ({ wide, href }) => (
   <ItemCard wide={wide}>
-    <Link className={styles.base} href={href}>
+    <Link className={styles.base} href={href} innerClassName={styles.iconWrapper}>
       <div>
         <FontAwesome className={styles.iconCircle} name="arrow-right" />
       </div>
