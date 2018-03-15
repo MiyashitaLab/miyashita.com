@@ -19,9 +19,9 @@ See [documentation](./docs).
 
 ## Maintainers
 
-| ![@3846masa](https://github.com/3846masa.png?size=100) |
-| :----------------------------------------------------: |
-| [@3846masa](https://github.com/3846masa)               |
+| ![@3846masa](https://github.com/3846masa.png?size=100) | ![@pvcresin](https://github.com/pvcresin.png?size=100) |
+| :----------------------------------------------------: | :----------------------------------------------------: |
+| [@3846masa](https://github.com/3846masa)               | [@pvcresin](https://github.com/pvcresin)               |
 
 ## License
 
