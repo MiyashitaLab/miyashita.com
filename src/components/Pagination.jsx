@@ -37,6 +37,7 @@ class Pagination extends React.Component {
         <Link
           className={classnames([styles.link, styles.enabled])}
           href={this.generatePath(pageNum)}
+          innerClassName={styles.linkBody}
         >
           {pageNum}
         </Link>

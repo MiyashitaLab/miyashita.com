@@ -32,6 +32,14 @@
   height: 2em;
 }
 
+.link-body {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .enabled {
   color: var(--cyan);
   background-color: transparent;

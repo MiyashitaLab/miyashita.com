@@ -15,7 +15,7 @@ class LinkWrapper extends React.Component {
   };
 
   render() {
-    const { href, children, ...rest } = this.props;
+    const { href, children, innerClassName, ...rest } = this.props;
 
     if (/^\w+:\/\//.test(href)) {
       return (
@@ -28,7 +28,7 @@ class LinkWrapper extends React.Component {
     return (
       <Observer onChange={this.onVisibleChange}>
         <span {...rest} style={{ ...rest.style, cursor: 'pointer' }}>
-          <Link to={href} onClick={this.onClick}>
+          <Link to={href} className={innerClassName} onClick={this.onClick}>
             {children}
           </Link>
         </span>
