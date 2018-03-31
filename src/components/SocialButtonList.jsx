@@ -13,7 +13,7 @@ const Utils = {
     return encodeUrl(url.resolve(baseUrl, path));
   },
   getPageTitle(siteTitle, title) {
-    return `${title} | ${process.env.siteTitle}`;
+    return `${title} | ${siteTitle}`;
   },
   getTwitterUrl(title, url) {
     const pageTitle = encodeURIComponent(title);
