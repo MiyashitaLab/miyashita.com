@@ -3,7 +3,8 @@ import Observer from '@researchgate/react-intersection-observer';
 import supportsWebP from 'supports-webp';
 import { getProgressiveImage, getOptimizedImage, getWebpImage } from '~/lib/imageUrl';
 
-const emptyImage = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+const emptyImage =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
 
 class OptimizedImage extends React.Component {
   static defaultProps = {
