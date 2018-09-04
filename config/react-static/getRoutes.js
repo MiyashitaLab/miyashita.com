@@ -2,7 +2,6 @@ import libpath from 'path';
 import pkgDir from 'pkg-dir';
 import orderBy from 'lodash.orderby';
 import getArticleList from './utils/getArticleList';
-import getResearchList from './utils/getResearchList';
 
 const rootDir = pkgDir.sync(__dirname);
 
@@ -62,7 +61,6 @@ function makePageRoutes(items, pageSize, route) {
 }
 
 async function getRoutes() {
-  const researchList = await getResearchList();
   const newsList = await getArticleList(filePaths.news, {
     permalink: '/news/:year/:month/:day/:title/',
   });
@@ -109,7 +107,6 @@ async function getRoutes() {
           title: '',
           description:
             '明治大学 総合数理学部 先端メディアサイエンス学科 / 明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 宮下研究室',
-          researches: researchList.sort((a, b) => b.date - a.date).slice(0, 8),
           news: newsList.slice(0, 8).map(i => ({ ...i, content: undefined, filePath: undefined })),
           projects: projectList.filter(i => i.visibleOnTopPage).map(i => ({
             ...i,

@@ -10,9 +10,9 @@ import FontAwesome from '~/components/FontAwesome';
 import SectionHeader from '~/components/SectionHeader';
 import CardList from '~/components/CardList';
 import ArticleCard from '~/components/ArticleCard';
+import ResearchCardList from '~/components/ResearchCardList';
 import MemberCard from '~/components/MemberCard';
 import ReadmoreCard from '~/components/ReadmoreCard';
-import SearchInput from '~/components/SearchInput';
 import Link from '~/components/Link';
 
 const Home = ({ page }) => (
@@ -25,7 +25,9 @@ const Home = ({ page }) => (
           <span>ニュース</span>
         </SectionHeader>
         <CardList>
-          {page.news.map(news => <ArticleCard key={news.title} item={news} />)}
+          {page.news.map(news => (
+            <ArticleCard key={news.title} item={news} />
+          ))}
           <ReadmoreCard href="/news/" />
         </CardList>
       </section>
@@ -37,13 +39,7 @@ const Home = ({ page }) => (
           <FontAwesome name="graduation-cap" />
           <span>論文データベース</span>
         </SectionHeader>
-        <div className={styles.researchInput}>
-          <SearchInput />
-        </div>
-        <CardList>
-          {page.researches.map(research => <ArticleCard key={research.id} item={research} />)}
-          <ReadmoreCard href="https://research.miyashita.com" />
-        </CardList>
+        <ResearchCardList />
       </section>
 
       <hr className={styles.hr} />
@@ -54,7 +50,9 @@ const Home = ({ page }) => (
           <span>プロジェクト</span>
         </SectionHeader>
         <CardList itemsLength={page.projects.length}>
-          {page.projects.map(project => <ArticleCard key={project.title} item={project} />)}
+          {page.projects.map(project => (
+            <ArticleCard key={project.title} item={project} />
+          ))}
           <ReadmoreCard href="/projects/" />
         </CardList>
       </section>
@@ -73,7 +71,9 @@ const Home = ({ page }) => (
           </Link>
         </p>
         <div className={styles.memberList}>
-          {page.members.map(member => <MemberCard key={member.title} info={member} />)}
+          {page.members.map(member => (
+            <MemberCard key={member.title} info={member} />
+          ))}
         </div>
       </section>
     </div>
