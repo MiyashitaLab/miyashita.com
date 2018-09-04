@@ -24,9 +24,9 @@ const PageNav = () => (
         </Link>
       </div>
       <div className={classnames([styles.col, styles.leftCol])}>
-        <div className={styles.searchInputWrapper}>
+        {/* <div className={styles.searchInputWrapper}>
           <SearchInput />
-        </div>
+        </div> */}
       </div>
     </div>
   </nav>
