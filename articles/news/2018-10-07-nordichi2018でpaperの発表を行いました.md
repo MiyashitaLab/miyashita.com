@@ -1,14 +1,22 @@
 ---
-published: 'false'
+published: 'true'
 title: NordiCHI2018でPaperの発表を行いました
-date: '2018-10-07'
+date: '2018-10-03'
+thumbnail: >-
+  https://lh3.googleusercontent.com/o6bqObuwlOHXoZRAT73ffOfValG7gmdDCeXRHCTatyA6TiY7PgVBb-6lUopDgNZgDWs3_qzYdLUTMZavz_YH7fbr-OCWhXNHlrFaIMGE0KxUv3CkSTh7HJAE-d1I-_XPHx8P7r9lCdz75uxq1TrxdEwmrDfftI23Kbl9_AICJ2gTM_If_usu7FmAmFRat7qtlIe7Rd_qEhfkeaLe_5FbMs4sy-Dq7iiaDHzdk8DB2LfAdqB4OZ5a4AOb42AlVCFdEoaLNnHX2hoxU65WX5AovZC_XnTHlMAIhqKPwKT4cUX2cH48WUxWVaGmztHz8EoPplZtzMIWc4QPqIJBGR0JPmOpYcZlKmIbUz2Anod4ExwO-_xFYxZl-Q3YDE_j6hNqEt_LmGu5Yzqi-wAe9fp7kyJBmWJUQJhInhXtJ_ZejFF8HnPtU_fKnmrjMynf3INtUmSG8Fm-o_Ajey7SqOXg3wmMFNGHGrD9Nfbyi8kmw9qPXsguxaz5962VWCAwI6C2cKySlG5uH9ulyu2CnhXY--DFuODecddpoL6IKoQ3WBA144bad4wrx5npsBlGTAfom1Ow28tzZl3bVr1WqrtfISdzQJswxC89GGTpb2DgYu6NGeaZCs6TraICexNJ7eL10clvHgPwFIw-w4P3dwpThMxD0QEX8VpQorH03Utt4X5-GRQbWJTfHUy8=w1024-h512-no?pageId=103824382426691254815
 ---
 2018年10月1日-3日にノルウェーのオスロで開催されたNordiCHI2018にて，Full paperを1件発表しました．
 
+会場のOslo Metropolitan Universityです（通称，Oslo Met）．大学内にはファブスペースやボルタリング用の壁がありました．
 
+![](https://lh3.googleusercontent.com/9EwyqLKrrjKcuMUDngj8ZROAAoTUSXgDq-mQ21ntsg7nlPBVHgF606CiUFQ-ytMQGpkynYc4XqHMxZF5jKgv3FAz1tjAe2-K2H2kkON_fqnMeLXA8yTvpu4DPclDNpt3AT3Ahc0mqe-s9s0qr9nQqXH_JG8VVqJX778O_BB12XjiNn0ufIOLFE4rFVh-YzI1A2J5btB5e9gC1tbV4AHxSesmByZXHV3tW3BjTapyZfqgO9QCT_2wYfC3mAgfgU77ZzR3g8KAO7AIAJgdRrHoo4vVcWxnZUavL_4UApdnAP5r9h4q6YYIB-0cTsXWNBGMkngMw46VPwwfUUVMqHBL2BnXuBKc-pfyMhFCnVZStuQVnHt_MyQRn5pN-rhrcxA4IY4C6X60G118q4SAGe1ZTXwtCGxDi6IRYvJ3DmIShDLEx_bdNeLgnYB1vHSsyCnwrX7A5SzqYP7yFEcZfjximusav51-uHxNrh1pDk7pBWSk3r-rVVfjRT1Kx77WMg7HlJfznKdfYAR84qu3B36ER4BVFs5co8XRayiQ8zOkDgJEmp8_fUq68ws_Nj9XUpIWuudawegKmo_Df7Of3Io5ZgerUD0wS7J0o-2Bz-rUUD7WYpsFIETXloTKO1ryss4PQRKw3YFpqRojqGWZv5GAo11BQtR9KyYKZ2iKf6R5x0yqalQws5sEmizG=w512-h380-no?pageId=103824382426691254815)
 
-[**Hiroki Usuba**, Shota Yamanaka, and Homei Miyashita. 2018. User performance by the difference between motor and visual widths for small target pointing. In _Proceedings of the 10th Nordic Conference on Human-Computer Interaction_ (NordiCHI '18), 161-169.](https://research.miyashita.com/papers/I33)
+プレゼンを始めるときの薄羽です．
 
-[NordiCHI2020](http://www.nordichi2020.org/)はエストニアのタリンで開催されます．
+![](https://lh3.googleusercontent.com/o6bqObuwlOHXoZRAT73ffOfValG7gmdDCeXRHCTatyA6TiY7PgVBb-6lUopDgNZgDWs3_qzYdLUTMZavz_YH7fbr-OCWhXNHlrFaIMGE0KxUv3CkSTh7HJAE-d1I-_XPHx8P7r9lCdz75uxq1TrxdEwmrDfftI23Kbl9_AICJ2gTM_If_usu7FmAmFRat7qtlIe7Rd_qEhfkeaLe_5FbMs4sy-Dq7iiaDHzdk8DB2LfAdqB4OZ5a4AOb42AlVCFdEoaLNnHX2hoxU65WX5AovZC_XnTHlMAIhqKPwKT4cUX2cH48WUxWVaGmztHz8EoPplZtzMIWc4QPqIJBGR0JPmOpYcZlKmIbUz2Anod4ExwO-_xFYxZl-Q3YDE_j6hNqEt_LmGu5Yzqi-wAe9fp7kyJBmWJUQJhInhXtJ_ZejFF8HnPtU_fKnmrjMynf3INtUmSG8Fm-o_Ajey7SqOXg3wmMFNGHGrD9Nfbyi8kmw9qPXsguxaz5962VWCAwI6C2cKySlG5uH9ulyu2CnhXY--DFuODecddpoL6IKoQ3WBA144bad4wrx5npsBlGTAfom1Ow28tzZl3bVr1WqrtfISdzQJswxC89GGTpb2DgYu6NGeaZCs6TraICexNJ7eL10clvHgPwFIw-w4P3dwpThMxD0QEX8VpQorH03Utt4X5-GRQbWJTfHUy8=w1024-h512-no?pageId=103824382426691254815)
+
+発表した論文の詳細: [**Hiroki Usuba**, Shota Yamanaka, and Homei Miyashita. 2018. User performance by the difference between motor and visual widths for small target pointing. In _Proceedings of the 10th Nordic Conference on Human-Computer Interaction_ (NordiCHI '18), 161-169.](https://research.miyashita.com/papers/I33)
+
+[NordiCHI2020](http://www.nordichi2020.org/)はエストニアのタリンで開催されます．北欧はとても綺麗なので，皆さん投稿して北欧の素晴らしさを味わいましょう．
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Uz79JZ86diE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
