@@ -1,7 +1,7 @@
 import React from 'react';
 import Observer from '@researchgate/react-intersection-observer';
-import { Link, prefetch } from 'react-static';
-import { withRouter } from 'react-router';
+import { prefetch } from 'react-static';
+import { Link, withRouter } from 'react-router-dom';
 
 class LinkWrapper extends React.Component {
   onVisibleChange = ({ isIntersecting }) => {
@@ -15,11 +15,11 @@ class LinkWrapper extends React.Component {
   };
 
   render() {
-    const { href, children, innerClassName, ...rest } = this.props;
+    const { href, children, innerClassName, staticContext, ...rest } = this.props;
 
     if (/^\w+:\/\//.test(href)) {
       return (
-        <a target="_blank" {...this.props} rel="noopener noreferrer">
+        <a target="_blank" href={href} {...rest} rel="noopener noreferrer">
           {children}
         </a>
       );

@@ -1,10 +1,10 @@
 import React from 'react';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { withRouteData } from 'react-static';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './Member.css';
 import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
+import withRouteData from '~/lib/withRouteData';
 import FaceImage from '~/components/FaceImage';
 import SocialButtonList from '~/components/SocialButtonList';
 import MarkdownContent from '~/components/MarkdownContent';

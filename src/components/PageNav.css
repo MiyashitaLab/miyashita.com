@@ -3,7 +3,7 @@
 .base {
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 0 0.5em 0 color(var(--black) alpha(0.25));
+  box-shadow: 0 0 0.5em 0 color-mod(var(--black) alpha(0.25));
   background: var(--backgroundColor);
 }
 

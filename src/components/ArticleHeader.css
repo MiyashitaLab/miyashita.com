@@ -30,8 +30,8 @@
 
   background: linear-gradient(
     to left,
-    color(var(--cyan) saturation(-50%)),
-    color(var(--cyan) saturation(+50%))
+    color-mod(var(--cyan) saturation(-50%)),
+    color-mod(var(--cyan) saturation(+50%))
   );
 }
 
@@ -72,9 +72,9 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    color(var(--white) alpha(0.25)) 0%,
-    color(var(--white) alpha(0.9)) 75%,
-    color(var(--white) alpha(0.95)) 100%
+    color-mod(var(--white) alpha(0.25)) 0%,
+    color-mod(var(--white) alpha(0.9)) 75%,
+    color-mod(var(--white) alpha(0.95)) 100%
   );
 }
 

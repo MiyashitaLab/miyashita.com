@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import WithStylesContext from './lib/WithStylesContext';
+import StyleContext from 'isomorphic-style-loader/StyleContext';
 
 import App from './App';
 export default App;
@@ -18,9 +18,11 @@ if (typeof document !== 'undefined') {
   const render = Comp => {
     const App = (
       <AppContainer>
-        <WithStylesContext onInsertCss={styles => styles._insertCss()}>
+        <StyleContext.Provider
+          value={{ insertCss: (...styles) => styles.forEach(s => s._insertCss()) }}
+        >
           <Comp />
-        </WithStylesContext>
+        </StyleContext.Provider>
       </AppContainer>
     );
 

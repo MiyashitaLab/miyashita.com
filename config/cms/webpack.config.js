@@ -1,8 +1,6 @@
 const libpath = require('path');
 const pkgDir = require('pkg-dir');
 const ejs = require('ejs');
-const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -10,8 +8,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const rootDir = pkgDir.sync(__dirname);
 const srcDir = libpath.resolve(rootDir, './src');
 const exportDir = libpath.resolve(rootDir, './public/admin');
-const isProd = process.env.NODE_ENV === 'production';
 
+/** @type {import('webpack').Configuration} */
 module.exports = {
   entry: libpath.resolve(srcDir, './cms/index.jsx'),
   output: {
@@ -82,10 +80,7 @@ module.exports = {
     new FriendlyErrorsWebpackPlugin({
       clearConsole: true,
     }),
-    new webpack.EnvironmentPlugin(['NODE_ENV']),
-    ...(isProd ? [new UglifyJsPlugin()] : []),
   ],
-  devtool: 'inline-source-map',
   devServer: {
     contentBase: libpath.resolve(rootDir, './public'),
     publicPath: '/admin/',

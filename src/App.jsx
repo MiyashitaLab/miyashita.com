@@ -1,17 +1,17 @@
 import React from 'react';
-import { Router } from 'react-static';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { Root } from 'react-static';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './App.css';
-import Loader from '~/components/Loader';
+// import Loader from '~/components/Loader';
 import PageNav from '~/components/PageNav';
 import PageFooter from '~/components/PageFooter';
 import AnimatedRoutes from '~/components/AnimatedRoutes';
 
 const App = () => (
-  <Router>
+  <Root>
     <div className={styles.base}>
-      <Loader />
+      {/* <Loader /> */}
       <header className={styles.header}>
         <PageNav />
       </header>
@@ -22,7 +22,7 @@ const App = () => (
         <PageFooter />
       </footer>
     </div>
-  </Router>
+  </Root>
 );
 
 export default withStyles(styles)(App);

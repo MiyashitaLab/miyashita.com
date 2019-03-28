@@ -25,7 +25,7 @@
   transition: color 0.25s ease;
 
   &:hover {
-    color: color(var(--black) alpha(0.5));
+    color: color-mod(var(--black) alpha(0.5));
   }
 }
 
@@ -46,9 +46,9 @@
     background: linear-gradient(
       to right,
       transparent 0%,
-      color(var(--cyan) alpha(0.75)) 15%,
+      color-mod(var(--cyan) alpha(0.75)) 15%,
       var(--cyan) 50%,
-      color(var(--cyan) alpha(0.75)) 85%,
+      color-mod(var(--cyan) alpha(0.75)) 85%,
       transparent 100%
     );
 

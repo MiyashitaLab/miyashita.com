@@ -1,7 +1,7 @@
 import React from 'react';
 import { Set } from 'immutable';
 
-import WithStylesContext from '../../lib/WithStylesContext';
+import StyleContext from 'isomorphic-style-loader/StyleContext';
 
 const previewWrapper = Component => {
   const ComponentName = Component.displayName || Component.name || 'Component';
@@ -14,22 +14,24 @@ const previewWrapper = Component => {
     };
 
     insertCss = styles => {
-      this.setState(({ css }) => {
-        return { css: css.add(styles._getCss()) };
-      });
+      styles.forEach(s =>
+        this.setState(({ css }) => {
+          return { css: css.add(s._getCss()) };
+        }),
+      );
     };
 
     render() {
       const props = this.props;
       return (
-        <WithStylesContext onInsertCss={this.insertCss}>
+        <StyleContext.Provider value={{ insertCss: this.insertCss }}>
           <style
             dangerouslySetInnerHTML={{
               __html: this.state.css.toArray().join('\n'),
             }}
           />
           <Component {...props} />
-        </WithStylesContext>
+        </StyleContext.Provider>
       );
     }
   }

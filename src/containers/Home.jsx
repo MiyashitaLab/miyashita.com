@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRouteData } from 'react-static';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './Home.css';
 import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
+import withRouteData from '~/lib/withRouteData';
 import HomeHeader from '~/components/HomeHeader';
 import FontAwesome from '~/components/FontAwesome';
 import SectionHeader from '~/components/SectionHeader';

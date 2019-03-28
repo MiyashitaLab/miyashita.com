@@ -1,12 +1,13 @@
 import React from 'react';
-import { withSiteData, withRouteData } from 'react-static';
 import url from 'url';
 import encodeUrl from 'encodeurl';
 
 import styles from './SocialButtonList.css';
 import SocialButton from '~/components/SocialButton';
-import { withRouter } from 'react-router';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { withRouter } from 'react-router-dom';
+import withStyles from 'isomorphic-style-loader/withStyles';
+import withSiteData from '~/lib/withSiteData';
+import withRouteData from '~/lib/withRouteData';
 
 const Utils = {
   getPageUrl(baseUrl, path) {

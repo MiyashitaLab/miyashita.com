@@ -1,7 +1,7 @@
 import React from 'react';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { withRouter } from 'react-router';
-import Routes from 'react-static-routes';
+import withStyles from 'isomorphic-style-loader/withStyles';
+import { Routes } from 'react-static';
+import { withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import styles from './AnimatedRoutes.css';

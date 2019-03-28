@@ -4,7 +4,7 @@ import tinytime from 'tinytime';
 import styles from './NewsHeader.css';
 import AutoTextWrap from '~/components/AutoTextWrap';
 import OptimizedImage from '~/components/OptimizedImage';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 const dateTemplate = tinytime('{YYYY}/{Mo}/{DD}', {
   padMonth: true,

@@ -1,7 +1,10 @@
 import React from 'react';
 import url from 'url';
-import { withRouter } from 'react-router';
-import { Head, withSiteData, withRouteData } from 'react-static';
+import { withRouter } from 'react-router-dom';
+import { Head } from 'react-static';
+
+import withSiteData from '~/lib/withSiteData';
+import withRouteData from '~/lib/withRouteData';
 
 function generateTitle({ page, site }) {
   return page.title ? `${page.title} | ${site.title}` : site.title;

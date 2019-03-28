@@ -19,7 +19,7 @@
   transition: color 0.125s ease;
 
   &:hover {
-    color: color(var(--black) alpha(0.5));
+    color: color-mod(var(--black) alpha(0.5));
   }
 
   @media (--small-viewport) {
@@ -28,7 +28,7 @@
 }
 
 .scroll-button-disabled {
-  color: color(var(--black) alpha(0.125));
+  color: color-mod(var(--black) alpha(0.125));
 }
 
 .outer {

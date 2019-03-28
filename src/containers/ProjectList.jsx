@@ -1,10 +1,10 @@
 import React from 'react';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { withRouteData } from 'react-static';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './ProjectList.css';
 import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
+import withRouteData from '~/lib/withRouteData';
 import ArticleHeader from '~/components/ArticleHeader';
 import ArticleCard from '~/components/ArticleCard';
 import SectionHeader from '~/components/SectionHeader';
@@ -46,7 +46,9 @@ const ProjectList = ({ page }) => {
           <section key={category.title} className={styles.section}>
             <SectionHeader>{category.title}</SectionHeader>
             <div className={styles.projectList}>
-              {category.items.map(item => <ArticleCard key={item.title} wide={true} item={item} />)}
+              {category.items.map(item => (
+                <ArticleCard key={item.title} wide={true} item={item} />
+              ))}
             </div>
           </section>
         ))}

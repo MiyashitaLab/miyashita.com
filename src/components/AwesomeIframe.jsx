@@ -1,7 +1,7 @@
 import React from 'react';
 import Observer from '@researchgate/react-intersection-observer';
 import url from 'url';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './AwesomeIframe.css';
 import OptimizedImage from '~/components/OptimizedImage';
@@ -40,8 +40,9 @@ class AwesomeIframe extends React.Component {
     return this.setState({ src: origin });
   }
 
-  onVisibleChange = ({ isIntersecting }) => {
+  onVisibleChange = ({ isIntersecting }, unobserve) => {
     this.setState(({ visible }) => ({ visible: visible || !!isIntersecting }));
+    unobserve();
   };
 
   render() {
@@ -53,7 +54,7 @@ class AwesomeIframe extends React.Component {
     });
 
     return (
-      <Observer onlyOnce onChange={this.onVisibleChange}>
+      <Observer onChange={this.onVisibleChange}>
         <div className={styles.base}>
           <div className={styles.wrapper}>
             {thumbnail && (
