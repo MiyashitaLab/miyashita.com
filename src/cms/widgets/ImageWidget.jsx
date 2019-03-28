@@ -1,7 +1,7 @@
 /* global gapi google */
 import React from 'react';
 import CMS from 'netlify-cms';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 import classnames from 'classnames';
 
 import styles from './ImageWidget.css';

@@ -24,7 +24,7 @@
 
 .icon-circle {
   display: inline-block;
-  background-color: color(var(--black) alpha(0.95));
+  background-color: color-mod(var(--black) alpha(0.95));
   color: var(--white);
   font-size: 1.5rem;
   width: 4rem;
@@ -32,7 +32,7 @@
   line-height: 4rem;
   border-radius: 50%;
   box-sizing: border-box;
-  box-shadow: 0 2px 5px 0 color(var(--black) alpha(0.25));
+  box-shadow: 0 2px 5px 0 color-mod(var(--black) alpha(0.25));
 }
 
 .text-wrapper {

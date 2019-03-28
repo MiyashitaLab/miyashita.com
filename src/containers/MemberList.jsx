@@ -1,10 +1,10 @@
 import React from 'react';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { withRouteData } from 'react-static';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './MemberList.css';
 import withTracker from '~/lib/withTracker';
 import withMetadata from '~/lib/withMetadata';
+import withRouteData from '~/lib/withRouteData';
 import ArticleHeader from '~/components/ArticleHeader';
 import SectionHeader from '~/components/SectionHeader';
 import MemberCard from '~/components/MemberCard';
@@ -19,14 +19,18 @@ const MemberList = ({ page }) => (
       <section>
         <SectionHeader>現役メンバー</SectionHeader>
         <div className={styles.memberList}>
-          {page.currentMembers.map(member => <MemberCard key={member.name} info={member} />)}
+          {page.currentMembers.map(member => (
+            <MemberCard key={member.name} info={member} />
+          ))}
         </div>
       </section>
 
       <section>
         <SectionHeader>歴代メンバー</SectionHeader>
         <div className={styles.memberList}>
-          {page.OBMembers.map(member => <MemberCard key={member.name} info={member} />)}
+          {page.OBMembers.map(member => (
+            <MemberCard key={member.name} info={member} />
+          ))}
         </div>
       </section>
     </div>

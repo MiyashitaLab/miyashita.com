@@ -50,9 +50,9 @@
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('~/assets/fonts/fontawesome-shrink.ttf') format('truetype'),
-    url('~/assets/fonts/fontawesome-shrink.woff') format('woff'),
-    url('~/assets/fonts/fontawesome-shrink.svg') format('svg');
+  src: url('/assets/fonts/fontawesome-shrink.ttf') format('truetype'),
+    url('/assets/fonts/fontawesome-shrink.woff') format('woff'),
+    url('/assets/fonts/fontawesome-shrink.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

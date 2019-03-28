@@ -1,6 +1,7 @@
 // https://github.com/react-ga/react-ga/wiki/React-Router-v4-withTracker
 import React from 'react';
 import GoogleAnalytics from 'react-ga';
+import { withRouter } from 'react-router-dom';
 
 GoogleAnalytics.initialize('UA-25034793-2');
 
@@ -37,7 +38,7 @@ const withTracker = (WrappedComponent, options = {}) => {
     }
   }
 
-  return HOC;
+  return withRouter(HOC);
 };
 
 export default withTracker;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Mikan from 'mikanjs';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './AutoTextWrap.css';
 

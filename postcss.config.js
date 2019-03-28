@@ -23,9 +23,11 @@ module.exports = {
         return resolver.resolveSync({}, basedir, id);
       },
     },
-    'postcss-cssnext': {
+    'postcss-preset-env': {
+      stage: 3,
       features: {
-        browsers: ['last 2 versions', 'safari >= 7'],
+        'nesting-rules': true,
+        'color-mod-function': { unresolved: 'warn' },
       },
     },
     'postcss-flexbugs-fixes': {},

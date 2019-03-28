@@ -21,7 +21,7 @@
 .hr {
   margin-top: 1.5rem;
   border: 0;
-  border-top: 5px double color(var(--gray) alpha(0.25));
+  border-top: 5px double color-mod(var(--gray) alpha(0.25));
 
   @media (--small-viewport) {
     margin-top: 0.5rem;
@@ -53,8 +53,8 @@
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
   color: var(--white);
-  background: color(var(--cyan) alpha(0.95));
-  border: 1px solid color(var(--cyan) alpha(0.95));
+  background: color-mod(var(--cyan) alpha(0.95));
+  border: 1px solid color-mod(var(--cyan) alpha(0.95));
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 0.125s ease;

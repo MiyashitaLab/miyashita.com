@@ -13,6 +13,7 @@ async function generateHeader() {
     const pathname = path
       .relative(DIST, page)
       .replace(/^\.?/, '/')
+      .replace(/\\/g, '/')
       .replace(/index\.html$/, '')
       .replace(/\.html$/, '');
     const $ = cheerio.load(await fs.readFile(page, 'utf8'));

@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './PageNav.css';
 import SearchInput from '~/components/SearchInput';

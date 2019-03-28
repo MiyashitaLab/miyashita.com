@@ -44,9 +44,10 @@ class OptimizedImage extends React.Component {
     };
   }
 
-  onVisibleChange = ({ isIntersecting }) => {
+  onVisibleChange = ({ isIntersecting }, unobserve) => {
     if (isIntersecting && !this.state.loaded) {
       this.loadImage();
+      unobserve();
     }
   };
 
@@ -68,7 +69,7 @@ class OptimizedImage extends React.Component {
       height: undefined,
     });
     return (
-      <Observer onlyOnce={true} onChange={this.onVisibleChange}>
+      <Observer onChange={this.onVisibleChange}>
         <img {...imageProps} alt={this.props.alt || ''} src={this.state.src} />
       </Observer>
     );

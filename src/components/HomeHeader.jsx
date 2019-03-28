@@ -1,5 +1,5 @@
 import React from 'react';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './HomeHeader.css';
 import OptimizedImage from '~/components/OptimizedImage';

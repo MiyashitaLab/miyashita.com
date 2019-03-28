@@ -1,6 +1,6 @@
 import React from 'react';
 import tinytime from 'tinytime';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 import styles from './ArticleCard.css';
 import ItemCard from '~/components/ItemCard';

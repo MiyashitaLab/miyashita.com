@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './FaceImage.css';
 import OptimizedImage from '~/components/OptimizedImage';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 
 const FaceImage = ({ src, size }) => (
   <div className={styles.base} style={{ width: size && `${size}px`, height: size && `${size}px` }}>
