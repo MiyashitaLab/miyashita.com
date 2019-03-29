@@ -15,6 +15,6 @@
 
   --textColor: var(--black);
   --backgroundColor: var(--white);
-
-  @custom-media --small-viewport (max-width: 640px);
 }
+
+@custom-media --small-viewport (max-width: 640px);
