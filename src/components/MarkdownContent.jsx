@@ -12,7 +12,7 @@ const processor = unified()
   .use(rehypeReact, {
     createElement: React.createElement,
     components: {
-      a: 'CMS' in window ? 'a' : Link,
+      a: 'CMS' in global ? 'a' : Link,
       iframe: AwesomeIframe,
       img: function MarkdownImage(props) {
         return <OptimizedImage {...props} width={500} />;
