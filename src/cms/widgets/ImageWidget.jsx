@@ -1,6 +1,6 @@
 /* global gapi google */
 import React from 'react';
-import CMS from 'netlify-cms';
+import * as CMS from 'netlify-cms';
 import withStyles from 'isomorphic-style-loader/withStyles';
 import classnames from 'classnames';
 

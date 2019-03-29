@@ -13,7 +13,7 @@ const previewWrapper = Component => {
       css: new Set(),
     };
 
-    insertCss = styles => {
+    insertCss = (...styles) => {
       styles.forEach(s =>
         this.setState(({ css }) => {
           return { css: css.add(s._getCss()) };

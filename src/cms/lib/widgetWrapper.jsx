@@ -11,7 +11,9 @@ const widgetWrapper = Component => {
     render() {
       const props = this.props;
       return (
-        <StyleContext.Provider value={{ insertCss: styles => styles.forEach(s => s._insertCss()) }}>
+        <StyleContext.Provider
+          value={{ insertCss: (...styles) => styles.forEach(s => s._insertCss()) }}
+        >
           <Component {...props} />
         </StyleContext.Provider>
       );

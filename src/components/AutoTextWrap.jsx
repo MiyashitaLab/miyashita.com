@@ -5,6 +5,9 @@ import withStyles from 'isomorphic-style-loader/withStyles';
 import styles from './AutoTextWrap.css';
 
 const AutoTextWrap = ({ text }) => {
+  if (!text) {
+    return <span />;
+  }
   const words = Mikan.split(text);
   return (
     <span>

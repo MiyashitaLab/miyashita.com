@@ -1,5 +1,5 @@
 /* globals gapi:false */
-import CMS from 'netlify-cms';
+import * as CMS from 'netlify-cms';
 
 import TestRepo from './backends/TestRepo';
 import ImageWidget from './widgets/ImageWidget';
@@ -18,3 +18,5 @@ CMS.registerWidget('image', ImageWidget);
 CMS.registerPreviewTemplate('news', NewsPreview);
 CMS.registerPreviewTemplate('members', MemberPreview);
 CMS.registerPreviewTemplate('articles', ArticlePreview);
+
+CMS.init();

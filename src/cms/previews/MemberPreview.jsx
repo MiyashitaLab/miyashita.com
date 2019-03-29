@@ -1,5 +1,5 @@
 import React from 'react';
-import CMS from 'netlify-cms'; // eslint-disable-line no-unused-vars
+import * as CMS from 'netlify-cms'; // eslint-disable-line no-unused-vars
 import withStyles from 'isomorphic-style-loader/withStyles';
 import visit from 'unist-util-visit';
 

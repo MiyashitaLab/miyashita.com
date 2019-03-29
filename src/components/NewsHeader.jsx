@@ -23,7 +23,7 @@ const NewsHeader = ({ src, title, date }) => {
           <AutoTextWrap text={title} />
         </h1>
         <p className={styles.date}>
-          <time dateTime={date.toISOString()}>{dateText}</time>
+          <time dateTime={!isNaN(date) && date.toISOString()}>{dateText}</time>
         </p>
       </div>
     </div>
