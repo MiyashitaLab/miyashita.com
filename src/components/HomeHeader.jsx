@@ -10,10 +10,10 @@ const imageUrl =
 const HomeHeader = () => (
   <header className={styles.base}>
     <div className={styles.imageWrapper}>
-      <OptimizedImage className={styles.image} src={imageUrl} width="1024" alt="Miyashita Lab" />
+      <OptimizedImage className={styles.image} src={imageUrl} width="1280" alt="Miyashita Lab" />
     </div>
     <div className={styles.bgImageWrapper}>
-      <OptimizedImage className={styles.bgImage} src={imageUrl} width="1024" alt="Miyashita Lab" />
+      <OptimizedImage className={styles.bgImage} src={imageUrl} width="1280" alt="Miyashita Lab" />
     </div>
   </header>
 );
