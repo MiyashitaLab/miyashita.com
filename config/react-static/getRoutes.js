@@ -101,7 +101,7 @@ async function getRoutes() {
   return [
     {
       path: '/',
-      component: 'src/containers/Home',
+      template: 'src/containers/Home',
       getData: () => ({
         page: {
           title: '',
@@ -122,7 +122,7 @@ async function getRoutes() {
     },
     ...makePageRoutes(newsList.map(i => ({ ...i, content: undefined, filePath: undefined })), 30, {
       path: '/news/',
-      component: 'src/containers/NewsList',
+      template: 'src/containers/NewsList',
       getData: () => ({
         page: {
           title: 'ニュース',
@@ -131,7 +131,7 @@ async function getRoutes() {
     }),
     {
       path: '/members/',
-      component: 'src/containers/MemberList',
+      template: 'src/containers/MemberList',
       getData: () => ({
         page: {
           title: 'メンバー',
@@ -142,7 +142,7 @@ async function getRoutes() {
     },
     {
       path: '/projects/',
-      component: 'src/containers/ProjectList',
+      template: 'src/containers/ProjectList',
       getData: () => ({
         page: {
           title: 'プロジェクト',
@@ -152,27 +152,27 @@ async function getRoutes() {
     },
     ...memberList.map(info => ({
       path: info.permalink,
-      component: 'src/containers/Member',
+      template: 'src/containers/Member',
       getData: () => ({ page: info }),
     })),
     ...newsList.map(info => ({
       path: info.permalink,
-      component: 'src/containers/News',
+      template: 'src/containers/News',
       getData: () => ({ page: info }),
     })),
     ...projectList.map(info => ({
       path: info.permalink,
-      component: 'src/containers/Article',
+      template: 'src/containers/Article',
       getData: () => ({ page: info }),
     })),
     ...othersList.map(info => ({
       path: info.permalink,
-      component: 'src/containers/Article',
+      template: 'src/containers/Article',
       getData: () => ({ page: info }),
     })),
     {
       path: '404',
-      component: 'src/containers/NotFound',
+      template: 'src/containers/NotFound',
       getData: () => ({ page: { title: '404 NotFound' } }),
     },
   ];

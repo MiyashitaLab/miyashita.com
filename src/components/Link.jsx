@@ -25,6 +25,15 @@ class LinkWrapper extends React.Component {
       );
     }
 
+    // For IE, Not to use SPA
+    if (global.navigator && /Trident.*rv:/.test(window.navigator.userAgent)) {
+      return (
+        <a href={href} {...rest}>
+          {children}
+        </a>
+      );
+    }
+
     return (
       <Observer onChange={this.onVisibleChange}>
         <span {...rest} style={{ ...rest.style, cursor: 'pointer' }}>

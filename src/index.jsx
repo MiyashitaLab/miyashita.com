@@ -1,3 +1,6 @@
+import 'core-js/modules/es.string.includes';
+import 'core-js/modules/es.map';
+import 'core-js/modules/es.set';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';

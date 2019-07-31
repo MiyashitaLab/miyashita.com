@@ -126,8 +126,14 @@ const webpackOverride = (config, { stage, defaultLoaders }) => {
       rules: [
         {
           oneOf: [
-            defaultLoaders.jsLoader,
-            defaultLoaders.jsLoaderExt,
+            {
+              test: /\.(js|jsx|mjs)$/,
+              use: [
+                {
+                  loader: 'babel-loader',
+                },
+              ],
+            },
             ...cssLoaders,
             fileLoader,
             defaultLoaders.fileLoader,
@@ -135,6 +141,7 @@ const webpackOverride = (config, { stage, defaultLoaders }) => {
         },
       ],
     },
+    devtool: 'cheap-module-source-map',
     plugins: [...config.plugins, ...(isProd ? pluginsForProduction : [])],
   });
 

@@ -1,18 +1,32 @@
 {
-  "presets": ["react-static/babel-preset.js"],
-  "plugins": ["@babel/plugin-proposal-class-properties", "lodash", "module:fast-async"],
-  "overrides": [
-    {
-      "test": ".",
-      "presets": [
-        [
-          "@babel/preset-env",
-          {
-            "corejs": 3,
-            "exclude": ["transform-regenerator"]
-          }
-        ]
-      ]
-    }
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs": 3,
+        "targets": ["extends browserslist-config-google"],
+        "exclude": [
+          "@babel/plugin-transform-regenerator",
+          "@babel/plugin-transform-async-to-generator"
+        ],
+        "useBuiltIns": "usage"
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "module:fast-async",
+      {
+        "compiler": {
+          "promises": true,
+          "generators": false
+        }
+      }
+    ],
+    "babel-plugin-universal-import",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    "lodash"
   ]
 }

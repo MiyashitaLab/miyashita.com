@@ -35,7 +35,7 @@ class OptimizedImage extends React.Component {
     const optimized = getOptimizedImage(props.src, props.width, props.height);
 
     return {
-      imageUrl: (supportsWebP && getWebpImage(optimized)) || optimized,
+      imageUrl: optimized,
       src:
         (props.options.progressive && getProgressiveImage(optimized, false)) ||
         (props.options.lazyload && emptyImage) ||
@@ -51,15 +51,17 @@ class OptimizedImage extends React.Component {
     }
   };
 
-  loadImage = () => {
+  loadImage = async () => {
     const img = new Image();
+    const imageUrl = (await supportsWebP) ? getWebpImage(this.state.imageUrl) : this.state.imageUrl;
+    console.log(imageUrl);
     img.addEventListener('load', () => {
-      this.setState(state => ({ src: state.imageUrl, loaded: true }));
+      this.setState({ src: imageUrl, loaded: true });
     });
     img.addEventListener('error', _err => {
       this.setState({ src: emptyImage, loaded: true });
     });
-    img.setAttribute('src', this.state.imageUrl);
+    img.setAttribute('src', imageUrl);
   };
 
   render() {

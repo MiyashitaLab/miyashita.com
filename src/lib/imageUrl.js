@@ -110,5 +110,5 @@ export function getWebpImage(src) {
   //   return `https://img.youtube.com/vi_webp/${id}/0.webp`;
   // }
 
-  return;
+  return src;
 }

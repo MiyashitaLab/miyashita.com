@@ -4,7 +4,7 @@ import Document from './src/components/Document';
 import getRoutes from './config/react-static/getRoutes';
 
 const isDev = process.env.NODE_ENV !== 'production';
-const siteRoot = isDev ? 'http://localhost:3000/' : 'https://miyashita.com/';
+const siteRoot = isDev || true ? 'http://localhost:3000/' : 'https://miyashita.com/';
 const rootDir = pkgDir.sync(__dirname);
 
 export default {

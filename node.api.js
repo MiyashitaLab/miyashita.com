@@ -15,7 +15,8 @@ export default _pluginOptions => ({
       </StyleContext.Provider>
     );
   },
-  Head: ({ meta }) => (
-    <style data-ssr dangerouslySetInnerHTML={{ __html: [...meta.styles].join('') }} />
-  ),
+  headElements: (elements, { meta }) => [
+    ...elements,
+    <style data-ssr dangerouslySetInnerHTML={{ __html: [...meta.styles].join('') }} />,
+  ],
 });
