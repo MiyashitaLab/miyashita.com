@@ -9,4 +9,4 @@ class: 6
 ---
 画像テスト
 
-![](https://lh3.googleusercontent.com/-Om6r2RIWmTo/XsbAhMJCW_I/AAAAAAAACps/rKbzQTWIi5UGvUKufATqnAothJu0rg9OACLcBGAsYHQ/defult-min.png)
+![](https://lh3.googleusercontent.com/-j6gWzIjMSao/XsbJRy0lsbI/AAAAAAAACrI/fAW5EypHjCATFnHBP8EP5uXcXI0QPZXcQCLcBGAsYHQ/defult-min.png)
