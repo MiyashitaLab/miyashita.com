@@ -7,4 +7,6 @@ school_year: 3
 year_of_graduation: 2021
 class: 6
 ---
-つよつよになりたい
+画像テスト
+
+![](https://lh3.googleusercontent.com/-Om6r2RIWmTo/XsbAhMJCW_I/AAAAAAAACps/rKbzQTWIi5UGvUKufATqnAothJu0rg9OACLcBGAsYHQ/defult-min.png)
