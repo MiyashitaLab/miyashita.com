@@ -13,8 +13,7 @@ const dateTemplate = tinytime('{YYYY}/{Mo}/{DD}', {
   padDays: true,
 });
 
-const noImage =
-  'https://lh3.googleusercontent.com/-Jg11be_N1pM/W44riQZisJI/AAAAAAAAILg/RVtrOK19mVgkyZSH7zHLSBiqVX180gy-ACE0YBhgL/s400/noimage.png';
+const noImage = '/assets/images/noimage.png';
 
 /**
  * @typedef Props
@@ -45,6 +44,7 @@ class ArticleCard extends React.Component {
           <div className={styles.thumbnailImageWrapper}>
             <OptimizedImage
               className={styles.thumbnailImage}
+              fallback={noImage}
               src={item.thumbnail || noImage}
               width="350"
             />

@@ -7,8 +7,7 @@ import SearchInput from '~/components/SearchInput';
 import OptimizedImage from '~/components/OptimizedImage';
 import Link from '~/components/Link';
 
-const logoImg =
-  'https://lh3.googleusercontent.com/-QPw7WLxdN9M/W44p1fOm4XI/AAAAAAAAILA/4JiqVbXKQaYElaAR6j4jFhE2bZVUn_f6wCE0YBhgL/s0/sublogo1.png';
+const logoImg = '/assets/images/logo.png';
 
 const PageNav = () => (
   <nav className={styles.base}>

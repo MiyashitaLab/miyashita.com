@@ -37,8 +37,8 @@ class OptimizedImage extends React.Component {
     return {
       imageUrl: optimized,
       src:
-        (props.options.progressive && getProgressiveImage(optimized, false)) ||
-        (props.options.lazyload && emptyImage) ||
+        // (props.options.progressive && getProgressiveImage(optimized, false)) ||
+        // (props.options.lazyload && emptyImage) ||
         optimized,
       loaded: false,
     };
@@ -59,7 +59,7 @@ class OptimizedImage extends React.Component {
       this.setState({ src: imageUrl, loaded: true });
     });
     img.addEventListener('error', _err => {
-      this.setState({ src: emptyImage, loaded: true });
+      this.setState({ src: this.props.fallback || emptyImage, loaded: true });
     });
     img.setAttribute('src', imageUrl);
   };
