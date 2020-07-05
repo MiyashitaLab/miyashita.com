@@ -14,12 +14,12 @@ collections:
       - label: 公開・非公開
         name: published
         widget: select
-        default: true
+        default: "publish"
         options:
           - label: 公開する
-            value: true
+            value: "publish"
           - label: 下書きにする
-            value: false
+            value: "private"
       - label: タイトル
         name: title
         widget: string
@@ -43,12 +43,12 @@ collections:
       - label: 公開・非公開
         name: published
         widget: select
-        default: true
+        default: "publish"
         options:
           - label: 公開する
-            value: true
+            value: "publish"
           - label: 下書きにする
-            value: false
+            value: "private"
       - label: 氏名
         name: title
         widget: string
@@ -95,12 +95,12 @@ collections:
       - label: 公開・非公開
         name: published
         widget: select
-        default: true
+        default: "publish"
         options:
           - label: 公開する
-            value: true
+            value: "publish"
           - label: 下書きにする
-            value: false
+            value: "private"
       - label: タイトル
         name: title
         widget: string
