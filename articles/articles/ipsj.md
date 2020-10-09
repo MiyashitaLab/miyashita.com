@@ -9,7 +9,7 @@ published: publish
 
 参考までに、情報処理学会のウェブサイトは[IPSJ.or.jp](http://www.ipsj.or.jp/)です。
 
-情報処理学会の公式twitterは[@IPSJcom](https://twitter.com/IPSJcom)でしたが、現在は [@IPSJ_officia](https://twitter.com/IPSJ_official)l になりました。
+情報処理学会の公式twitterは[@IPSJcom](https://twitter.com/IPSJcom)でしたが、現在は [@IPSJ_official](https://twitter.com/IPSJ_official) になりました。
 
 元の [@IPSJcom](https://twitter.com/IPSJcom) の所有権は放棄されていたので、
 
