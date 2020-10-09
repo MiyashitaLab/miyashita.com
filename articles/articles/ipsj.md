@@ -13,6 +13,6 @@ published: publish
 
 元の [@IPSJcom](https://twitter.com/IPSJcom) の所有権は放棄されていたので、
 
-ドメイン [IPSJ.com](http://ipsj.com/)を所有する [宮下芳明](http://www.homei.com)が持つのが自然だと考え、2020年10月に取得しました。
+ドメイン [IPSJ.com](http://ipsj.com/)を9年間所有してきた [宮下芳明](http://www.homei.com)が持つのが自然だと考え、2020年10月に取得しました。
 
 ちなみに[@IPSJorjp](https://twitter.com/IPSJorjp)は、[宮下芳明](http://www.homei.com)が2011年10月から所有しています。
