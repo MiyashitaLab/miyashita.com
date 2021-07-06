@@ -9,4 +9,4 @@ class: 6
 ---
 画像テスト
 
-![](https://raw.githubusercontent.com/MiyashitaLab/miyashita.com/master/public/files/%E5%86%8D%E7%94%9F%E5%81%9C%E6%AD%A2%E3%83%9C%E3%82%BF%E3%83%B3.png)
+![](/files/%E5%86%8D%E7%94%9F%E5%81%9C%E6%AD%A2%E3%83%9C%E3%82%BF%E3%83%B3.png)
