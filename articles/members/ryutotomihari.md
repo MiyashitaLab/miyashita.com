@@ -1,7 +1,7 @@
 ---
 published: true
 title: 富張瑠斗
-avatar: /files/no_icon.jpeg
+avatar: /files/tomihari.png
 category: 03_M
 school_year: 1
 year_of_graduation: 2021
