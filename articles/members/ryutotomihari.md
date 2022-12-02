@@ -1,21 +1,16 @@
 ---
-published: true
+published: publish
 title: 富張瑠斗
 avatar: /files/noicon.jpeg
 category: 03_M
 school_year: 1
-year_of_graduation: 2021
+year_of_graduation: 2023
 class: 6
 ---
-画像テスト
+# 研究業績
 
-![](/files/%E5%86%8D%E7%94%9F%E5%81%9C%E6%AD%A2%E3%83%9C%E3%82%BF%E3%83%B3.png)
+1. [**富張瑠斗**，木下大樹，大塲洋介，山中祥太，宮下芳明．視力の低下がポインティングパフォーマンスに及ぼす影響，研究報告ヒューマンコンピュータインタラクション（HCI），Vol.2022-HCI-199，Issue.5，pp.1-7，2022．](https://research.miyashita.com/papers/D252)
+1. [木下大樹，大塲洋介，**富張瑠斗**，山中祥太，宮下芳明．ポインティング手法の評価実験における速さと正確さへのバイアスが評価結果に与える影響，研究報告ヒューマンコンピュータインタラクション（HCI），Vol.2022-HCI-199，Issue.37，pp.1-8，2022．](https://research.miyashita.com/papers/D253)
 
-<﻿br>
-1﻿
-
-<﻿br>
-2﻿
-
-<﻿br>
-3
+# ポートフォリオ
+https://sites.google.com/view/hooraytritium
