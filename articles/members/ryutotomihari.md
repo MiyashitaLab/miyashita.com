@@ -1,7 +1,7 @@
 ---
 published: publish
 title: 富張瑠斗
-avatar: /files/noicon.jpeg
+avatar: /files/tomihari.png
 category: 03_M
 school_year: 1
 year_of_graduation: 2023
