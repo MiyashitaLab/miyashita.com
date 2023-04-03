@@ -3,7 +3,7 @@ published: publish
 title: 富張瑠斗
 avatar: /files/tomihari.png
 category: 03_M
-school_year: 4
+school_year: 2
 year_of_graduation: 2023
 class: 6
 ---
