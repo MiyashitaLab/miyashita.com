@@ -13,4 +13,3 @@ class: 6
 1. [木下大樹，大塲洋介，**富張瑠斗**，山中祥太，宮下芳明．ポインティング手法の評価実験における速さと正確さへのバイアスが評価結果に与える影響，研究報告ヒューマンコンピュータインタラクション（HCI），Vol.2022-HCI-199，Issue.37，pp.1-8，2022．](https://research.miyashita.com/papers/D253)
 
 # ポートフォリオ
-https://sites.google.com/view/hooraytritium
